@@ -20,6 +20,14 @@ header {
   background-color: #033027; /* Darker green for header */
   padding: 10px 20px;
   border-radius: 8px;
+  max-width: 100%; /* Ensure header takes up full width */
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* Allow logo to take up space in header */
 }
 
 header .logo img {
