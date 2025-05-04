@@ -106,9 +106,9 @@ footer {
 }
 
 .top-left-image {
-  left: 0;  /* Directly at the left edge of the page */
+  left: 10px;  /* Moved slightly right */
 }
 
 .top-right-image {
-  right: 0;  /* Directly at the right edge of the page */
+  right: 10px;  /* Moved slightly left */
 }
