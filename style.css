@@ -9,6 +9,9 @@ body {
   color: white;
   font-family: Arial, sans-serif;
   padding: 20px;
+  height: 100%;         /* Make sure body takes up full height of the screen */
+  display: flex;        /* Enable Flexbox layout */
+  flex-direction: column; /* Stack content vertically */
 }
 
 header {
@@ -46,6 +49,7 @@ main {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  flex: 1;              /* Makes the main content flexible */
 }
 
 #home {
@@ -88,15 +92,6 @@ footer {
   font-size: 0.9em;
   padding: 20px 0;
   border-top: 1px solid #ffffff33;
-}
-
-/* Contact Page */
-.social-media a {
-  color: #ffcc00;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-.social-media a:hover {
-  text-decoration: underline;
+  background-color: #033027; /* Optional to make the footer match the header */
+  color: white;
 }
