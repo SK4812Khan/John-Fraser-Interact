@@ -96,18 +96,19 @@ footer {
   color: white;
 }
 
-/* Add styling for top-left and top-right images */
+/* Updated styling for larger and closer images */
 .top-left-image, .top-right-image {
   position: absolute;
-  top: 20px;  /* 20px from the top of the page */
-  width: 100px;  /* You can adjust the size of the image */
-  height: auto;
+  top: 40px;  /* 40px from the top of the page */
+  width: auto;
+  height: 300px; /* Height is large to reach near the 'Service Above Self' text */
+  max-width: none;
 }
 
 .top-left-image {
-  left: 20px;  /* 20px from the left of the page */
+  left: 0;  /* Directly at the left edge of the page */
 }
 
 .top-right-image {
-  right: 20px;  /* 20px from the right of the page */
+  right: 0;  /* Directly at the right edge of the page */
 }
