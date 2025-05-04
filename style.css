@@ -97,20 +97,20 @@ footer {
   color: white;
 }
 
-/* Updated styling for larger and closer images */
+/* Updated styling for much larger and closer images */
 .top-left-image,
 .top-right-image {
   position: absolute;
-  top: 40px;
+  top: 30px;
   width: auto;
-  height: 300px;
+  height: 400px; /* Larger height */
   max-width: none;
 }
 
 .top-left-image {
-  left: 30px; /* Moved 30px from the left */
+  left: 120px; /* Much closer to center */
 }
 
 .top-right-image {
-  right: 30px; /* Moved 30px from the right */
+  right: 120px; /* Much closer to center */
 }
