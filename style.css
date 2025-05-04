@@ -73,19 +73,6 @@ main {
   font-size: 1.2em;
 }
 
-.btn {
-  background-color: #ffcc00; /* Yellow button */
-  color: #033027; /* Dark green text */
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  margin-top: 80px;
-}
-
-.btn:hover {
-  background-color: #ff9933; /* Darker yellow on hover */
-}
 
 /* About Section */
 #about {
