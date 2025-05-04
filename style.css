@@ -14,12 +14,14 @@ body {
 
 /* Header Section */
 header {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #033027; /* Darker green for header */
-  padding: 10px 200px;
+  background-color: #033027;
+  padding: 10px;
   border-radius: 20px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
