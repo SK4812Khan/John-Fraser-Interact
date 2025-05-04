@@ -19,6 +19,7 @@ header {
   align-items: center;
   background-color: #033027; /* Darker green for header */
   padding: 10px 200px;
+  padding-left: 75px;
   border-radius: 20px;
   max-width: 100%; /* Ensure header takes up full width */
 }
