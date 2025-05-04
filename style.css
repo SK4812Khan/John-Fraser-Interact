@@ -23,18 +23,6 @@ header {
   max-width: 100%; /* Ensure header takes up full width */
 }
 
-header .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1; /* Allow logo to take up space in header */
-}
-
-header .logo img {
-  max-width: 150px;
-  height: auto;
-}
-
 nav ul {
   display: flex;
   list-style: none;
