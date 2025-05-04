@@ -6,10 +6,10 @@
 
 /* Set background color */
 body {
-  background-color: #043f2b; /* Green background */
-  color: white; /* White text color for contrast */
-  font-family: Arial, sans-serif; /* Set a default font */
-  padding: 20px; /* Add padding around the content */
+  background-color: #043f2b;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
 /* Header Section */
@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffcc00; /* Highlight link on hover */
+  color: #ffcc00;
 }
 
 /* Main Content */
@@ -50,21 +50,23 @@ main {
   margin-top: 20px;
 }
 
+/* Home Section (updated) */
 #home {
   text-align: left;
+  padding-left: 30px;
   margin-bottom: 60px;
-  padding-left: 40px;
 }
 
 #home h1 {
-  font-size: 6em;
+  font-size: 4.5em; /* Smaller heading */
+  max-width: 90%;
   margin-bottom: 10px;
 }
 
 #home p {
-  font-size: 1.6em;
-  max-width: 600px; /* Prevents it from stretching wider than the heading */
-  line-height: 1.3;  /* Optional: improves readability */
+  font-size: 1.4em; /* Smaller and narrower than h1 */
+  max-width: 65%;
+  line-height: 1.4;
 }
 
 /* About Section */
@@ -93,7 +95,7 @@ main {
 }
 
 .event-card {
-  background-color: #033027; /* Darker green for event cards */
+  background-color: #033027;
   color: white;
   margin-top: 20px;
   padding: 20px;
@@ -130,6 +132,6 @@ footer {
   text-align: center;
   font-size: 1em;
   color: white;
-  background-color: #033027; /* Dark green footer */
+  background-color: #033027;
   padding: 10px;
 }
