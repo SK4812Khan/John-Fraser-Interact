@@ -4,157 +4,99 @@
   box-sizing: border-box;
 }
 
-/* Set background color */
 body {
-  background-color: #043f2b; /* Green background */
-  color: white; /* White text color for contrast */
-  font-family: Arial, sans-serif; /* Set a default font */
-  padding: 20px; /* Add padding around the content */
-  position: relative; /* Allow for absolute positioning of the logo */
+  background-color: #043f2b;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-/* Header Section */
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #033027;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 20px;
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  position: relative; /* Position relative for logo positioning */
 }
 
 nav ul {
-  display: flex;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-  margin-left: 20px;
+  margin: 0 15px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 nav ul li a:hover {
-  color: #ffcc00; /* Highlight link on hover */
+  color: #ffcc00;
 }
 
-/* Main Content */
 main {
-  margin-top: 20px;
+  margin-top: 40px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Adjusted Home Section for the logo space */
 #home {
-  text-align: center;  /* Center align the section */
-  margin-top: 40px; /* Move the text down a fair amount to create space */
+  text-align: center;
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 
 #home h1 {
-  font-size: 6em;
-  margin-bottom: 10px;
+  font-size: 4em;
+  margin-bottom: 20px;
 }
 
 #home p {
   font-size: 1.6em;
-  max-width: 600px; /* Prevents it from stretching wider than the heading */
-  line-height: 1.3;  /* Optional: improves readability */
-  margin: 0 auto;  /* Centers the paragraph */
-  text-align: center;  /* Ensure the text is aligned in the center */
-}
-
-/* Section Content Centering */
-.section-content {
+  line-height: 1.4;
   max-width: 700px;
   margin: 0 auto;
-  text-align: center;
 }
 
-/* About Section */
-#about {
-  margin-top: 40px;
-}
-
-#about h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-#about p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-/* Events Section */
-#events {
-  margin-top: 70px;
-}
-
-#events h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.event-card {
-  background-color: #033027; /* Darker green for event cards */
-  color: white;
-  margin-top: 20px;
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
-  border-radius: 8px;
-}
-
-.event-card h3 {
-  font-size: 1.8em;
-}
-
-.event-card p {
-  font-size: 1.1em;
-  line-height: 1.5;
-}
-
-/* Contact Section */
-#contact {
-  margin-top: 40px;
-}
-
-#contact h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-#contact p {
-  font-size: 1.1em;
-  line-height: 1.5;
-}
-
-/* Footer Section */
-footer {
-  margin-top: 800px;
   text-align: center;
-  font-size: 1em;
-  color: white;
-  background-color: #033027; /* Dark green footer */
-  padding: 10px;
 }
 
-/* Logo Positioning (Add logo as an image inside your HTML) */
-header::before {
-  content: '';
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 60px;  /* Adjust the size of the logo */
-  height: 60px;
-  border-radius: 50%;
-  background-image: url('path-to-your-logo.png'); /* Add your logo image path here */
-  background-size: cover;
+.team-member, .event-card {
+  background-color: #055c3d;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 600px;
+  text-align: left;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 20px 0;
+  border-top: 1px solid #ffffff33;
+}
+
+/* Contact Page */
+.social-media a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
 }
