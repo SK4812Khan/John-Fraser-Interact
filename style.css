@@ -10,6 +10,7 @@ body {
   color: white; /* White text color for contrast */
   font-family: Arial, sans-serif; /* Set a default font */
   padding: 20px; /* Add padding around the content */
+  position: relative; /* Allow for absolute positioning of the logo */
 }
 
 /* Header Section */
@@ -23,6 +24,7 @@ header {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative; /* Position relative for logo positioning */
 }
 
 nav ul {
@@ -50,8 +52,10 @@ main {
   margin-top: 20px;
 }
 
+/* Adjusted Home Section for the logo space */
 #home {
   text-align: center;  /* Center align the section */
+  margin-top: 150px; /* Move the text down a fair amount to create space */
   margin-bottom: 60px;
 }
 
@@ -140,4 +144,17 @@ footer {
   color: white;
   background-color: #033027; /* Dark green footer */
   padding: 10px;
+}
+
+/* Logo Positioning (Add logo as an image inside your HTML) */
+header::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 60px;  /* Adjust the size of the logo */
+  height: 60px;
+  border-radius: 50%;
+  background-image: url('path-to-your-logo.png'); /* Add your logo image path here */
+  background-size: cover;
 }
