@@ -12,7 +12,6 @@ body {
   height: 100%;         /* Make sure body takes up full height of the screen */
   display: flex;        /* Enable Flexbox layout */
   flex-direction: column; /* Stack content vertically */
-  position: relative;  /* To position the images inside header */
 }
 
 header {
@@ -21,24 +20,6 @@ header {
   border-radius: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;  /* To position the images */
-}
-
-.header-images {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.top-left-image,
-.top-right-image {
-  width: 50px;  /* You can adjust the size of the image here */
-  height: auto;
-  margin-top: 10px;  /* Add some margin from the top */
 }
 
 nav ul {
@@ -113,4 +94,20 @@ footer {
   border-top: 1px solid #ffffff33;
   background-color: #033027; /* Optional to make the footer match the header */
   color: white;
+}
+
+/* Add styling for top-left and top-right images */
+.top-left-image, .top-right-image {
+  position: absolute;
+  top: 20px;  /* 20px from the top of the page */
+  width: 100px;  /* You can adjust the size of the image */
+  height: auto;
+}
+
+.top-left-image {
+  left: 20px;  /* 20px from the left of the page */
+}
+
+.top-right-image {
+  right: 20px;  /* 20px from the right of the page */
 }
