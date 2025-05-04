@@ -55,7 +55,7 @@ main {
 /* Adjusted Home Section for the logo space */
 #home {
   text-align: center;  /* Center align the section */
-  margin-top: 150px; /* Move the text down a fair amount to create space */
+  margin-top: 40px; /* Move the text down a fair amount to create space */
   margin-bottom: 60px;
 }
 
