@@ -97,20 +97,33 @@ footer {
   color: white;
 }
 
-/* Updated styling for much larger and closer images */
 .top-left-image,
 .top-right-image {
   position: absolute;
   top: 30px;
   width: auto;
-  height: 400px; /* Larger height */
+  height: 400px; 
   max-width: none;
 }
 
 .top-left-image {
-  left: 120px; /* Much closer to center */
+  left: 120px; 
 }
 
 .top-right-image {
-  right: 120px; /* Much closer to center */
+  right: 120px; 
+}
+
+.bottom-image-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 60px 0 20px 0;
+  flex-wrap: wrap;
+}
+
+.bottom-image-row img {
+  height: 400px; 
+  width: auto;
+  border-radius: 15px;
 }
