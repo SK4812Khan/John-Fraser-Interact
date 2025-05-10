@@ -97,36 +97,9 @@ footer {
   right: 120px;
 }
 
-/* Bottom images row */
-.bottom-image-row {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 140px; /* Increased from 40px to 140px on Home page */
-  margin-bottom: 40px;
-}
-
-.bottom-image-row img {
-  width: 30%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-/* Adjust for About Section */
-#about .bottom-image-row {
-  margin-top: 180px; /* Move images lower for About section */
-}
-
-/* Adjust for Events Section */
-#events .bottom-image-row {
-  margin-top: 180px; /* Move images lower for Events section */
-}
-
-/* If you need more control over the specific spacing of these sections, you can also adjust the general section spacing */
-#about,
-#events {
-  margin-bottom: 100px; /* Ensure some space below the content */
+/* Adjust for team section layout */
+#team .section-content {
+  margin-top: 40px;
 }
 
 /* Centered row for President, Secretary, Treasurer */
@@ -134,7 +107,8 @@ footer {
   display: flex;
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -143,31 +117,51 @@ footer {
   text-align: center;
 }
 
-/* Two-column layout for Events and Communications */
-.team-columns {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
+.team-stack .team-member img {
+  width: 100%;
+  max-width: 200px; /* Adjust image size for better layout */
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+  object-fit: cover;
 }
 
-/* For larger screens, switch to horizontal layout under the logos */
-@media (min-width: 769px) {
-  .team-columns {
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-    align-items: flex-start;
-  }
+.team-stack .team-member p {
+  font-size: 1.6em;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Two-column layout for Events and Communications under the logos */
+.team-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 40px;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
+  width: 45%;
 }
 
+/* Adjust for mobile view: stack the columns */
+@media (max-width: 768px) {
+  .team-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .column {
+    width: 80%;
+  }
+}
+
+/* Styling for individual team members */
 #team .team-member {
   background-color: #055c3d;
   padding: 30px;
@@ -200,68 +194,36 @@ footer {
   font-weight: 600;
 }
 
-/* Specific adjustments for the layout of the President, Secretary, and Treasurer */
-.president {
-  order: 1;
-}
-
-.secretary {
-  order: 2;
-}
-
-.treasurer {
-  order: 3;
-}
-
-/* Responsive design for laptops and smaller screens */
-
-/* Adjust logos on laptops and larger tablets */
+/* Adjust logos on smaller screens */
 @media (max-width: 1200px) and (min-width: 768px) {
   .top-left-image,
   .top-right-image {
-    height: 250px;   /* Reduce height */
-    top: 10px;       /* Reduce top offset */
+    height: 250px;
+    top: 10px;
   }
 
   .top-left-image {
-    left: 40px;  /* Move left image closer */
+    left: 40px;
   }
 
   .top-right-image {
-    right: 40px;  /* Move right image closer */
+    right: 40px;
   }
 }
 
-/* Hide logos completely on mobile (screens smaller than 768px) */
 @media (max-width: 768px) {
   .top-left-image,
   .top-right-image {
     display: none;
   }
 
-  .team-stack,
+  .team-stack {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .team-columns {
     flex-direction: column;
     align-items: center;
   }
-}
-
-/* Center and enlarge text for the "home" section */
-#home {
-  text-align: center;
-  margin-top: 60px;
-}
-
-#home h1 {
-  font-size: 4em; /* Make "JFSS INTERACT" much larger */
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-#home p {
-  font-size: 2.5em; /* Make "Service Above Self" larger */
-  font-weight: 500;
-  width: 90%; /* Reduce the width */
-  margin: 0 auto; /* Center it horizontally */
-  padding: 0 20px; /* Add padding on both sides to avoid overlap */
 }
