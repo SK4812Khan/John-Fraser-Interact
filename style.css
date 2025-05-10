@@ -200,12 +200,12 @@ footer {
 @media (max-width: 1200px) and (min-width: 768px) {
   .top-left-image,
   .top-right-image {
-    height: 250px;
+    height: 100px; /* Smaller height */
     top: 10px;
   }
 
-  .top-left-image { left: 40px; }
-  .top-right-image { right: 40px; }
+  .top-left-image { left: 10; }     /* Move outward */
+  .top-right-image { right: 10; }   /* Move outward */
 }
 
 @media (max-width: 768px) {
