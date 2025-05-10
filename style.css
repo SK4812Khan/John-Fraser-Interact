@@ -97,6 +97,22 @@ footer {
   right: 120px;
 }
 
+/* Bottom images row */
+.bottom-image-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.bottom-image-row img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 /* Centered row for President, Secretary, Treasurer */
 .team-stack {
   display: flex;
