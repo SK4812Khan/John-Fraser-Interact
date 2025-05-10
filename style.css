@@ -97,20 +97,6 @@ footer {
   right: 120px;
 }
 
-#team {
-  padding-top: 60px;
-}
-
-#team h2 {
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-
-#team p {
-  font-size: 1.4em;
-  margin-bottom: 40px;
-}
-
 /* Centered row for President, Secretary, Treasurer */
 .team-stack {
   display: flex;
@@ -167,16 +153,35 @@ footer {
   font-weight: 600;
 }
 
-/* Responsive design for smaller screens */
+/* Responsive design for laptops and smaller screens */
+
+/* Adjust logos on laptops and larger tablets */
+@media (max-width: 1200px) and (min-width: 768px) {
+  .top-left-image,
+  .top-right-image {
+    height: 250px;   /* Reduce height */
+    top: 10px;       /* Reduce top offset */
+  }
+
+  .top-left-image {
+    left: 40px;  /* Move left image closer */
+  }
+
+  .top-right-image {
+    right: 40px;  /* Move right image closer */
+  }
+}
+
+/* Hide logos completely on mobile (screens smaller than 768px) */
 @media (max-width: 768px) {
+  .top-left-image,
+  .top-right-image {
+    display: none;
+  }
+
   .team-stack,
   .team-columns {
     flex-direction: column;
     align-items: center;
   } 
-
-  .top-left-image,
-  .top-right-image {
-    display: none;
-  }
 }
