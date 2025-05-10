@@ -20,9 +20,10 @@ body {
   color: white;
   font-family: 'Sinew Sans Pro', sans-serif;
   padding: 20px;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 header {
@@ -70,33 +71,6 @@ main {
   text-align: center;
 }
 
-#home {
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-#home h1 {
-  font-size: 4em;
-  margin-bottom: 20px;
-}
-
-#home p {
-  font-size: 1.6em;
-  line-height: 1.4;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-#about {
-  max-width: 600px;
-  margin: 80px auto;
-  padding: 20px;
-  text-align: center;
-  z-index: 1;
-  position: relative;
-}
-
 footer {
   margin-top: 60px;
   text-align: center;
@@ -123,20 +97,6 @@ footer {
   right: 120px;
 }
 
-.bottom-image-row {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 60px 0 20px 0;
-  flex-wrap: wrap;
-}
-
-.bottom-image-row img {
-  height: 400px;
-  width: auto;
-  border-radius: 15px;
-}
-
 #team {
   padding-top: 60px;
 }
@@ -151,10 +111,33 @@ footer {
   margin-bottom: 40px;
 }
 
+/* Centered row for President, Secretary, Treasurer */
+.team-stack {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Two-column layout for Events and Communications */
+.team-columns {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 #team .team-member {
   background-color: #055c3d;
   padding: 30px;
-  margin-bottom: 40px;
   border-radius: 15px;
   text-align: center;
 }
@@ -182,4 +165,18 @@ footer {
   font-size: 1.6em;
   margin-top: 10px;
   font-weight: 600;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .team-stack,
+  .team-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-left-image,
+  .top-right-image {
+    display: none;
+  }
 }
