@@ -97,9 +97,20 @@ footer {
   right: 120px;
 }
 
-/* Adjust for team section layout */
-#team .section-content {
-  margin-top: 40px;
+/* Bottom images row */
+.bottom-image-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 140px; /* Keeping the increased top margin */
+  margin-bottom: 40px;
+}
+
+.bottom-image-row img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 /* Centered row for President, Secretary, Treasurer */
@@ -107,8 +118,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 30px;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -117,51 +127,31 @@ footer {
   text-align: center;
 }
 
-.team-stack .team-member img {
-  width: 100%;
-  max-width: 200px; /* Adjust image size for better layout */
-  height: auto;
-  border-radius: 10px;
-  display: block;
-  margin: 10px auto;
-  object-fit: cover;
-}
-
-.team-stack .team-member p {
-  font-size: 1.6em;
-  margin-top: 10px;
-  font-weight: 600;
-}
-
-/* Two-column layout for Events and Communications under the logos */
+/* Two-column layout for Events and Communications */
 .team-columns {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+/* For larger screens, switch to horizontal layout under the logos */
+@media (min-width: 769px) {
+  .team-columns {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 45%;
+  gap: 40px;
 }
 
-/* Adjust for mobile view: stack the columns */
-@media (max-width: 768px) {
-  .team-columns {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .column {
-    width: 80%;
-  }
-}
-
-/* Styling for individual team members */
 #team .team-member {
   background-color: #055c3d;
   padding: 30px;
@@ -194,36 +184,68 @@ footer {
   font-weight: 600;
 }
 
-/* Adjust logos on smaller screens */
+/* Specific adjustments for the layout of the President, Secretary, and Treasurer */
+.president {
+  order: 1;
+}
+
+.secretary {
+  order: 2;
+}
+
+.treasurer {
+  order: 3;
+}
+
+/* Responsive design for laptops and smaller screens */
+
+/* Adjust logos on laptops and larger tablets */
 @media (max-width: 1200px) and (min-width: 768px) {
   .top-left-image,
   .top-right-image {
-    height: 250px;
-    top: 10px;
+    height: 250px;   /* Reduce height */
+    top: 10px;       /* Reduce top offset */
   }
 
   .top-left-image {
-    left: 40px;
+    left: 40px;  /* Move left image closer */
   }
 
   .top-right-image {
-    right: 40px;
+    right: 40px;  /* Move right image closer */
   }
 }
 
+/* Hide logos completely on mobile (screens smaller than 768px) */
 @media (max-width: 768px) {
   .top-left-image,
   .top-right-image {
     display: none;
   }
 
-  .team-stack {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  .team-stack,
   .team-columns {
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* Center and enlarge text for the "home" section */
+#home {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#home h1 {
+  font-size: 4em; /* Make "JFSS INTERACT" much larger */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 2.5em; /* Make "Service Above Self" larger */
+  font-weight: 500;
+  width: 90%; /* Reduce the width */
+  margin: 0 auto; /* Center it horizontally */
+  padding: 0 20px; /* Add padding on both sides to avoid overlap */
 }
