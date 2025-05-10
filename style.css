@@ -123,6 +123,10 @@ footer {
   margin-bottom: 60px;
 }
 
+.team-stack .team-member {
+  text-align: center;
+}
+
 /* Two-column layout for Events and Communications */
 .team-columns {
   display: flex;
@@ -167,6 +171,19 @@ footer {
   font-size: 1.6em;
   margin-top: 10px;
   font-weight: 600;
+}
+
+/* Specific adjustments for the layout of the President, Secretary, and Treasurer */
+.president {
+  order: 1;
+}
+
+.secretary {
+  order: 2;
+}
+
+.treasurer {
+  order: 3;
 }
 
 /* Responsive design for laptops and smaller screens */
