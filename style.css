@@ -102,7 +102,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 140px; /* Increased from 40px to 140px */
+  margin-top: 140px; /* Increased from 40px to 140px on Home page */
   margin-bottom: 40px;
 }
 
@@ -111,6 +111,22 @@ footer {
   height: auto;
   border-radius: 10px;
   object-fit: cover;
+}
+
+/* Adjust for About Section */
+#about .bottom-image-row {
+  margin-top: 180px; /* Move images lower for About section */
+}
+
+/* Adjust for Events Section */
+#events .bottom-image-row {
+  margin-top: 180px; /* Move images lower for Events section */
+}
+
+/* If you need more control over the specific spacing of these sections, you can also adjust the general section spacing */
+#about,
+#events {
+  margin-bottom: 100px; /* Ensure some space below the content */
 }
 
 /* Centered row for President, Secretary, Treasurer */
