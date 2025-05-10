@@ -97,39 +97,34 @@ footer {
   right: 120px;
 }
 
-/* Bottom images row */
 .bottom-image-row {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  margin-top: 140px; /* Increased from 40px to 140px on Home page */
+  margin-top: 140px;
   margin-bottom: 40px;
 }
 
 .bottom-image-row img {
-  width: 32%; /* Adjust to fit three images next to each other */
+  width: 32%;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
 }
 
-/* Adjust for About Section */
 #about .bottom-image-row {
-  margin-top: 180px; /* Move images lower for About section */
+  margin-top: 180px;
 }
 
-/* Adjust for Events Section */
 #events .bottom-image-row {
-  margin-top: 180px; /* Move images lower for Events section */
+  margin-top: 180px;
 }
 
-/* If you need more control over the specific spacing of these sections, you can also adjust the general section spacing */
 #about,
 #events {
-  margin-bottom: 100px; /* Ensure some space below the content */
+  margin-bottom: 100px;
 }
 
-/* Centered row for President, Secretary, Treasurer */
 .team-stack {
   display: flex;
   justify-content: center;
@@ -143,7 +138,6 @@ footer {
   text-align: center;
 }
 
-/* Two-column layout for Events and Communications */
 .team-columns {
   display: flex;
   flex-direction: column;
@@ -151,7 +145,6 @@ footer {
   gap: 60px;
 }
 
-/* For larger screens, switch to horizontal layout under the logos */
 @media (min-width: 769px) {
   .team-columns {
     flex-direction: row;
@@ -200,39 +193,21 @@ footer {
   font-weight: 600;
 }
 
-/* Specific adjustments for the layout of the President, Secretary, and Treasurer */
-.president {
-  order: 1;
-}
+.president { order: 1; }
+.secretary { order: 2; }
+.treasurer { order: 3; }
 
-.secretary {
-  order: 2;
-}
-
-.treasurer {
-  order: 3;
-}
-
-/* Responsive design for laptops and smaller screens */
-
-/* Adjust logos on laptops and larger tablets */
 @media (max-width: 1200px) and (min-width: 768px) {
   .top-left-image,
   .top-right-image {
-    height: 250px;   /* Reduce height */
-    top: 10px;       /* Reduce top offset */
+    height: 250px;
+    top: 10px;
   }
 
-  .top-left-image {
-    left: 40px;  /* Move left image closer */
-  }
-
-  .top-right-image {
-    right: 40px;  /* Move right image closer */
-  }
+  .top-left-image { left: 40px; }
+  .top-right-image { right: 40px; }
 }
 
-/* Hide logos completely on mobile (screens smaller than 768px) */
 @media (max-width: 768px) {
   .top-left-image,
   .top-right-image {
@@ -246,37 +221,44 @@ footer {
   }
 }
 
-/* Center and enlarge text for the "home" section */
+/* Home Section */
 #home {
   text-align: center;
   margin-top: 60px;
 }
 
 #home h1 {
-  font-size: 4em; /* Make "JFSS INTERACT" much larger */
+  font-size: 4em;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 #home p {
-  font-size: 2.5em; /* Make "Service Above Self" larger */
+  font-size: 2.5em;
   font-weight: 500;
-  width: 90%; /* Reduce the width */
-  margin: 0 auto; /* Center it horizontally */
-  padding: 0 20px; /* Add padding on both sides to avoid overlap */
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Centering and adjusting the "We are an organization of Rotary" text in the About section */
+/* ---- ABOUT SECTION ADJUSTMENTS ---- */
 #about .section-content {
   text-align: center;
-  width: 80%; /* Limit the width to prevent overlap with the logo */
-  margin: 0 auto; /* Center the content horizontally */
+  width: 80%;
+  margin: 0 auto;
+}
+
+#about .section-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 #about .section-content .rotary-text {
-  width: 70%; /* Adjust width to avoid overlap */
-  margin: 20px auto; /* Center and add margin */
-  font-size: 1.4em; /* Adjust font size for readability */
+  width: 65%;
+  margin: 0 auto;
+  font-size: 1.6em;
   font-weight: 600;
   text-align: center;
+  line-height: 1.5;
 }
