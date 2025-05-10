@@ -24,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  font-size: 1.2em; /* Increase the default font size */
 }
 
 header {
@@ -49,7 +50,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.8em; /* Increased size for nav links */
 }
 
 nav ul li a:hover {
@@ -71,10 +72,20 @@ main {
   text-align: center;
 }
 
+.section-content h2 {
+  font-size: 2.5em; /* Increased size for the heading */
+  margin-bottom: 20px;
+}
+
+.section-content p {
+  font-size: 1.8em; /* Increased size for paragraphs */
+  margin-bottom: 20px;
+}
+
 footer {
   margin-top: 60px;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 1.2em; /* Increased font size for footer */
   padding: 20px 0;
   border-top: 1px solid #ffffff33;
   background-color: #033027;
@@ -170,7 +181,7 @@ footer {
 
 #team .team-member h3 {
   margin-bottom: 20px;
-  font-size: 2em;
+  font-size: 2.5em; /* Increased size for team member headers */
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -188,7 +199,7 @@ footer {
 }
 
 #team .team-member p {
-  font-size: 1.6em;
+  font-size: 1.8em; /* Increased size for team member descriptions */
   margin-top: 10px;
   font-weight: 600;
 }
@@ -228,13 +239,13 @@ footer {
 }
 
 #home h1 {
-  font-size: 4em;
+  font-size: 4.5em; /* Increased size for the home header */
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 #home p {
-  font-size: 2.5em;
+  font-size: 3em; /* Increased size for home section paragraph */
   font-weight: 500;
   width: 90%;
   margin: 0 auto;
@@ -249,7 +260,7 @@ footer {
 }
 
 #about .section-content h1 {
-  font-size: 3em;
+  font-size: 3.5em; /* Increased size for about section header */
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -257,7 +268,7 @@ footer {
 #about .section-content .rotary-text {
   width: 80%;
   margin: 0 auto;
-  font-size: 1.6em;
+  font-size: 2em; /* Increased font size for rotary text */
   font-weight: 600;
   text-align: center;
   line-height: 1.5;
