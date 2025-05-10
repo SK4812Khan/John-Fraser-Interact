@@ -245,4 +245,7 @@ footer {
 #home p {
   font-size: 2.5em; /* Make "Service Above Self" larger */
   font-weight: 500;
+  width: 90%; /* Reduce the width */
+  margin: 0 auto; /* Center it horizontally */
+  padding: 0 20px; /* Add padding on both sides to avoid overlap */
 }
