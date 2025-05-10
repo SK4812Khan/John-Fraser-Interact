@@ -130,9 +130,11 @@ footer {
 /* Two-column layout for Events and Communications */
 .team-columns {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 60px;
   flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .column {
