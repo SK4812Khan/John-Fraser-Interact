@@ -173,7 +173,7 @@ footer {
   .team-columns {
     flex-direction: column;
     align-items: center;
-  }
+  } 
 
   .top-left-image,
   .top-right-image {
