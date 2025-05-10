@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Sinew Sans Pro';
+  src: url('fonts/SinewsSansPro-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
