@@ -239,6 +239,247 @@ footer {
 #home h1 {
   font-size: 4em; /* Make "JFSS INTERACT" much larger */
   font-weight: bold;
+  margin-bottom: 20px;@font-face {
+  font-family: 'Sinew Sans Pro';
+  src: url('fonts/SinewsSansPro-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sinew-font {
+  font-family: 'Sinew Sans Pro', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #043f2b;
+  color: white;
+  font-family: 'Sinew Sans Pro', sans-serif;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+header {
+  background-color: #033027;
+  padding: 10px 20px;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+main {
+  margin-top: 40px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+}
+
+.section-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 20px 0;
+  border-top: 1px solid #ffffff33;
+  background-color: #033027;
+  color: white;
+}
+
+.top-left-image,
+.top-right-image {
+  position: absolute;
+  top: 30px;
+  width: auto;
+  height: 400px;
+}
+
+.top-left-image {
+  left: 120px;
+}
+
+.top-right-image {
+  right: 120px;
+}
+
+/* Bottom images row */
+.bottom-image-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 140px; /* Increased from 40px to 140px */
+  margin-bottom: 40px;
+}
+
+.bottom-image-row img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Centered row for President, Secretary, Treasurer */
+.team-stack {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.team-stack .team-member {
+  text-align: center;
+}
+
+/* Two-column layout for Events and Communications */
+.team-columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+/* For larger screens, switch to horizontal layout under the logos */
+@media (min-width: 769px) {
+  .team-columns {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#team .team-member {
+  background-color: #055c3d;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#team .team-member h3 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ffcc00;
+}
+
+#team .team-member img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+  object-fit: cover;
+}
+
+#team .team-member p {
+  font-size: 1.6em;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Specific adjustments for the layout of the President, Secretary, and Treasurer */
+.president {
+  order: 1;
+}
+
+.secretary {
+  order: 2;
+}
+
+.treasurer {
+  order: 3;
+}
+
+/* Responsive design for laptops and smaller screens */
+
+/* Adjust logos on laptops and larger tablets */
+@media (max-width: 1200px) and (min-width: 768px) {
+  .top-left-image,
+  .top-right-image {
+    height: 250px;   /* Reduce height */
+    top: 10px;       /* Reduce top offset */
+  }
+
+  .top-left-image {
+    left: 40px;  /* Move left image closer */
+  }
+
+  .top-right-image {
+    right: 40px;  /* Move right image closer */
+  }
+}
+
+/* Hide logos completely on mobile (screens smaller than 768px) */
+@media (max-width: 768px) {
+  .top-left-image,
+  .top-right-image {
+    display: none;
+  }
+
+  .team-stack,
+  .team-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Center and enlarge text for the "home" section */
+#home {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#home h1 {
+  font-size: 4em; /* Make "JFSS INTERACT" much larger */
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
