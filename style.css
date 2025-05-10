@@ -102,7 +102,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 40px;
+  margin-top: 140px; /* Increased from 40px to 140px */
   margin-bottom: 40px;
 }
 
