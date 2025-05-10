@@ -147,3 +147,35 @@ footer {
   z-index: 1;
   position: relative;
 }
+
+#team .team-member {
+  background-color: #055c3d;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: 'Sinew Sans Pro', sans-serif;
+}
+
+#team .team-member h3 {
+  margin-bottom: 20px;
+  font-size: 2em; /* larger title */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+#team .team-member img {
+  width: 320px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+#team .team-member p {
+  font-size: 1.6em; /* bigger name text */
+  margin-top: 10px;
+  font-weight: 600;
+}
