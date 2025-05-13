@@ -254,7 +254,7 @@ footer {
 /* ---- ABOUT SECTION ADJUSTMENTS ---- */
 #about .section-content {
   text-align: center;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -265,7 +265,7 @@ footer {
 }
 
 #about .section-content .rotary-text {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   font-size: 2em; /* Increased font size for rotary text */
   font-weight: 600;
