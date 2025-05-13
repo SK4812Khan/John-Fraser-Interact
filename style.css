@@ -208,7 +208,7 @@ footer {
 .secretary { order: 2; }
 .treasurer { order: 3; }
 
-@media (max-width: 1370px) and (min-width: 768px) {
+@media (max-width: 1200px) and (min-width: 768px) {
   .top-left-image,
   .top-right-image {
     height: 100px; /* Smaller height */
