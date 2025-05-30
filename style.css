@@ -32,11 +32,11 @@ body {
 
 /* Top Header Above Navbar */
 .top-header {
-  position: relative; /* changed for absolute centering */
   background-color: #046344;
   display: flex;
   align-items: center;
-  padding: 0 20px; /* added horizontal padding */
+  padding: 0;
+  gap: 15px;
   width: 100vw;
   height: auto;
 }
@@ -45,24 +45,18 @@ body {
   height: 40px;
   width: auto;
   display: block;
-  margin-left: 0; /* reset margin */
-  z-index: 2; /* keep logo above */
+  margin: 20px;
 }
 
 .top-header h1 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 3.5em;
   font-weight: bold;
   color: white;
   margin: 0;
   line-height: 1;
-  padding: 20px 0;
-  white-space: nowrap;
-  z-index: 1;
-  pointer-events: none;
-  width: max-content;
+  flex-grow: 1;
+  text-align: center;
+  padding: 20px;
 }
 
 /* Header/Nav Styles */
@@ -75,7 +69,6 @@ header {
 
 nav {
   width: 100%;
-  padding: 0;
 }
 
 nav ul {
@@ -177,22 +170,15 @@ footer {
   margin-bottom: 100px;
 }
 
-/* Meet the Team Hex Layout */
+/* Team Grid Layout */
 #team .team-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   max-width: 1000px;
   margin: 60px auto;
   padding: 0 20px;
-}
-
-#team .team-row {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  justify-items: center;
 }
 
 #team .team-member {
@@ -228,6 +214,42 @@ footer {
 #team .team-member p {
   font-size: 1.5em;
   font-weight: 600;
+}
+
+/* Specific Placement for Grid Roles */
+.president {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.secretary {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.comm-manager-left {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.treasurer {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.comm-manager-right {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.events-manager-left {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.events-manager-right {
+  grid-column: 3;
+  grid-row: 3;
 }
 
 /* Optional: Hide legacy layouts */
@@ -296,11 +318,4 @@ footer {
   font-weight: 600;
   margin-top: 50px;
   margin-bottom: 30px;
-}
-
-/* Hide Rotary logo on mobile */
-@media (max-width: 768px) {
-  .top-header img {
-    display: none;
-  }
 }
