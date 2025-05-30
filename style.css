@@ -1,14 +1,17 @@
-@font-face {
-  font-family: 'Sinew Sans Pro';
-  src: url('fonts/SinewsSansPro-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* Font Utility Classes */
+.ibarra-font {
+  font-family: 'Ibarra Real Nova', serif;
 }
 
-.sinew-font {
-  font-family: 'Sinew Sans Pro', sans-serif;
+.montserrat-font {
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +21,7 @@
 body {
   background-color: #043f2b;
   color: white;
-  font-family: 'Sinew Sans Pro', sans-serif;
+  font-family: 'Ibarra Real Nova', serif;
   padding: 20px;
   min-height: 100vh;
   display: flex;
@@ -92,7 +95,7 @@ footer {
   color: white;
 }
 
-/* Show rotary logos only on desktop */
+/* Desktop Logo Display */
 @media (min-width: 1201px) {
   .top-left-image,
   .top-right-image {
@@ -112,7 +115,7 @@ footer {
   }
 }
 
-/* Hide rotary logos on tablet and mobile */
+/* Hide Logos on Smaller Screens */
 @media (max-width: 1200px) {
   .top-left-image,
   .top-right-image {
