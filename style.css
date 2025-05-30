@@ -169,11 +169,12 @@ footer {
 /* Team Grid Layout */
 #team .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   max-width: 1000px;
   margin: 60px auto;
   padding: 0 20px;
+  justify-items: center;
 }
 
 #team .team-member {
@@ -211,66 +212,53 @@ footer {
   font-weight: 600;
 }
 
-/* Optional: Remove old styles */
-.team-stack, .team-columns, .column {
+/* Specific Placement for Grid Roles */
+.president {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.secretary {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.comm-manager-left {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.treasurer {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.comm-manager-right {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.events-manager-left {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.events-manager-right {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+/* Optional: Hide legacy layouts */
+.team-stack,
+.team-columns,
+.column {
   display: none;
 }
 
-@media (min-width: 769px) {
-  .team-columns {
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-    align-items: flex-start;
-  }
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-#team .team-member {
-  background-color: #055c3d;
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-}
-
-#team .team-member h3 {
-  margin-bottom: 20px;
-  font-size: 2.5em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: #ffcc00;
-}
-
-#team .team-member img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  display: block;
-  margin: 10px auto;
-  object-fit: cover;
-}
-
-#team .team-member p {
-  font-size: 1.8em;
-  margin-top: 10px;
-  font-weight: 600;
-}
-
-.president { order: 1; }
-.secretary { order: 2; }
-.treasurer { order: 3; }
-
+/* Responsive for smaller screens */
 @media (max-width: 768px) {
-  .team-stack,
-  .team-columns {
+  #team .team-grid {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
