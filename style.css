@@ -22,12 +22,12 @@ body {
   background-color: #043f2b;
   color: white;
   font-family: 'Ibarra Real Nova', serif;
+  padding: 20px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
   font-size: 1.2em;
-  padding: 0; /* padding removed completely */
 }
 
 /* Top Header Above Navbar */
@@ -54,15 +54,15 @@ body {
   margin: 0;
   line-height: 1;
   flex-grow: 1;
-  text-align: center;
+  text-align: left;
 }
 
 /* Header/Nav Styles */
 header {
   background-color: #033027;
-  padding: 0; /* no padding */
+  padding: 0; /* removed left/right padding for full width */
   width: 100%;
-  margin-top: 0;
+  margin-top: 0; /* removed extra margin so no big gap on index page */
 }
 
 nav ul {
@@ -90,7 +90,7 @@ nav ul li a:hover {
 /* Home Section */
 #home {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 40px; /* smaller margin to fix index page gap */
 }
 
 #home h1 {
@@ -273,11 +273,11 @@ footer {
 }
 
 #about .section-content .rotary-text {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   font-size: 2em;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
   line-height: 1.5;
 }
 
