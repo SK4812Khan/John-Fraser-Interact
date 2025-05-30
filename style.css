@@ -109,32 +109,6 @@ footer {
 }
 
 /* Desktop Logo Display */
-@media (min-width: 1201px) {
-  .top-left-image,
-  .top-right-image {
-    position: absolute;
-    top: 30px;
-    width: auto;
-    height: 400px;
-    display: block;
-  }
-
-  .top-left-image {
-    left: 120px;
-  }
-
-  .top-right-image {
-    right: 120px;
-  }
-}
-
-/* Hide Logos on Smaller Screens */
-@media (max-width: 1200px) {
-  .top-left-image,
-  .top-right-image {
-    display: none;
-  }
-}
 
 .bottom-image-row {
   display: flex;
