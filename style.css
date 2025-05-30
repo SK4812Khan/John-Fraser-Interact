@@ -35,7 +35,7 @@ header {
   background-color: #033027;
   padding: 10px 20px;
   width: 100%;
-  margin-top: 20px; /* moved margin-top here */
+  margin-top: 100px;
 }
 
 nav ul {
@@ -63,7 +63,7 @@ nav ul li a:hover {
 /* Home Section */
 #home {
   text-align: center;
-  margin-top: 100px; /* moved margin-top here */
+  margin-top: 20px; /* Moved margin here */
 }
 
 #home h1 {
@@ -254,4 +254,3 @@ footer {
   text-align: center;
   line-height: 1.5;
 }
-
