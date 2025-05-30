@@ -254,3 +254,10 @@ footer {
   text-align: center;
   line-height: 1.5;
 }
+
+.home-slogan {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 10px;
+  font-weight: 500;
+}
