@@ -32,11 +32,11 @@ body {
 
 /* Top Header Above Navbar */
 .top-header {
+  position: relative; /* changed for absolute centering */
   background-color: #046344;
   display: flex;
   align-items: center;
-  padding: 0;
-  gap: 15px;
+  padding: 0 20px; /* added horizontal padding */
   width: 100vw;
   height: auto;
 }
@@ -45,18 +45,24 @@ body {
   height: 40px;
   width: auto;
   display: block;
-  margin-left: 20px;
+  margin-left: 0; /* reset margin */
+  z-index: 2; /* keep logo above */
 }
 
 .top-header h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 3.5em;
   font-weight: bold;
   color: white;
   margin: 0;
   line-height: 1;
-  flex-grow: 1;
-  text-align: center;
   padding: 20px 0;
+  white-space: nowrap;
+  z-index: 1;
+  pointer-events: none;
+  width: max-content;
 }
 
 /* Header/Nav Styles */
@@ -292,9 +298,9 @@ footer {
   margin-bottom: 30px;
 }
 
+/* Hide Rotary logo on mobile */
 @media (max-width: 768px) {
   .top-header img {
     display: none;
   }
 }
-
