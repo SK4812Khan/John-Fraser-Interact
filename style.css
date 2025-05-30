@@ -33,7 +33,7 @@ body {
 /* Header/Nav Styles */
 header {
   background-color: #033027;
-  padding: 10px 20px;
+  padding: 0px 20px;
   width: 100%;
   margin-top: 20px; /* moved margin-top here */
 }
