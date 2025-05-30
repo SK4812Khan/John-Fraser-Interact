@@ -35,14 +35,17 @@ body {
   background-color: #046344;
   display: flex;
   align-items: center;
-  padding: 20px 20px;
+  padding: 0;
   gap: 15px;
+  width: 100vw;
+  height: auto;
 }
 
 .top-header img {
   height: 40px;
   width: auto;
   display: block;
+  margin: 20px;
 }
 
 .top-header h1 {
@@ -53,14 +56,19 @@ body {
   line-height: 1;
   flex-grow: 1;
   text-align: center;
+  padding: 20px;
 }
 
 /* Header/Nav Styles */
 header {
   background-color: #033027;
+  width: 100vw;
+  margin: 0;
   padding: 0;
+}
+
+nav {
   width: 100%;
-  margin-top: 0;
 }
 
 nav ul {
@@ -68,6 +76,8 @@ nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
@@ -257,13 +267,12 @@ footer {
     align-items: center;
   }
 
-  #about .about-flex-container {
+  #about .about-flex {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
-  #about .about-flex-container img {
-    max-width: 100%;
+  #about .about-flex img {
     margin-top: 20px;
   }
 }
@@ -283,27 +292,21 @@ footer {
   text-align: left;
 }
 
-#about .about-flex-container {
+#about .about-flex {
   display: flex;
   align-items: flex-start;
   gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 30px;
 }
 
-#about .about-flex-container .rotary-text {
-  flex: 1 1 60%;
+#about .rotary-text {
+  width: 50%;
   font-size: 2em;
   font-weight: 600;
-  text-align: left;
   line-height: 1.6;
-  margin: 0;
 }
 
-#about .about-flex-container img {
-  flex: 1 1 35%;
-  max-width: 400px;
-  height: auto;
+#about .about-flex img {
+  width: 45%;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -316,3 +319,4 @@ footer {
   margin-top: 50px;
   margin-bottom: 30px;
 }
+
