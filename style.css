@@ -30,12 +30,12 @@ body {
   font-size: 1.2em;
 }
 
+/* Header/Nav Styles */
 header {
   background-color: #033027;
   padding: 10px 20px;
-  border-radius: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  margin-top: 20px;
 }
 
 nav ul {
@@ -60,6 +60,24 @@ nav ul li a:hover {
   color: #ffcc00;
 }
 
+/* Home Section */
+#home {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#home h1 {
+  font-size: 4.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Adjust spacing to keep nav directly below title */
+#home + header {
+  margin-top: 0;
+}
+
+/* Main and Section Styles */
 main {
   margin-top: 40px;
   max-width: 1000px;
@@ -226,26 +244,6 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-}
-
-/* Home Section */
-#home {
-  text-align: center;
-  margin-top: 60px;
-}
-
-#home h1 {
-  font-size: 4.5em;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-#home p {
-  font-size: 3em;
-  font-weight: 500;
-  width: 90%;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 /* About Section Adjustments */
