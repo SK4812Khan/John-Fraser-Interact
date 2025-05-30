@@ -22,12 +22,12 @@ body {
   background-color: #043f2b;
   color: white;
   font-family: 'Ibarra Real Nova', serif;
-  padding: 20px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
   font-size: 1.2em;
+  padding: 0; /* padding removed completely */
 }
 
 /* Top Header Above Navbar */
@@ -48,7 +48,7 @@ body {
 
 /* JFSS Interact text in Top Header */
 .top-header h1 {
-  font-size: 3.5em
+  font-size: 3.5em;
   font-weight: bold;
   color: white;
   margin: 0;
@@ -60,9 +60,9 @@ body {
 /* Header/Nav Styles */
 header {
   background-color: #033027;
-  padding: 0; /* removed left/right padding for full width */
+  padding: 0; /* no padding */
   width: 100%;
-  margin-top: 0; /* removed extra margin so no big gap on index page */
+  margin-top: 0;
 }
 
 nav ul {
@@ -90,7 +90,7 @@ nav ul li a:hover {
 /* Home Section */
 #home {
   text-align: center;
-  margin-top: 40px; /* smaller margin to fix index page gap */
+  margin-top: 40px;
 }
 
 #home h1 {
