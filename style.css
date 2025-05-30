@@ -30,12 +30,39 @@ body {
   font-size: 1.2em;
 }
 
+/* Top Header Above Navbar */
+.top-header {
+  background-color: #046344;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+/* Rotary Foundation Logo in Top Header */
+.top-header img {
+  height: 40px; /* small enough to not disrupt layout */
+  width: auto;
+  display: block;
+}
+
+/* JFSS Interact text in Top Header */
+.top-header h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  line-height: 1;
+  flex-grow: 1;
+  text-align: left;
+}
+
 /* Header/Nav Styles */
 header {
   background-color: #033027;
-  padding: 0px 20px;
+  padding: 0; /* removed left/right padding for full width */
   width: 100%;
-  margin-top: 20px;
+  margin-top: 0; /* removed extra margin so no big gap on index page */
 }
 
 nav ul {
@@ -63,7 +90,7 @@ nav ul li a:hover {
 /* Home Section */
 #home {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 40px; /* smaller margin to fix index page gap */
 }
 
 #home h1 {
