@@ -337,3 +337,13 @@ footer {
     font-size: 1.2em;
   }
 }
+
+body {
+  transition: opacity 0.4s ease;
+  opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
