@@ -172,12 +172,29 @@ footer {
   margin-bottom: 100px;
 }
 
+/* Changed: Align children to start (left) */
 #about .about-flex {
-  flex-direction: column;
-  align-items: center;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  justify-content: flex-start; /* <-- changed from default (center) */
+}
+
+/* Rotary text left aligned and no extra margin */
+#about .rotary-text {
+  width: auto;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: left;  /* <-- added */
+  margin-left: 0;    /* <-- added */
+  padding-left: 0;   /* <-- added */
 }
 
 #about .about-flex img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
   margin-top: 20px;
 }
 
@@ -194,25 +211,6 @@ footer {
   margin-bottom: 20px;
   font-weight: bold;
   text-align: left;
-}
-
-#about .about-flex {
-  display: flex;
-  align-items: flex-start;
-  gap: 30px;
-}
-
-#about .rotary-text {
-  width: 100%;
-  font-size: 2em;
-  font-weight: 600;
-  line-height: 1.6;
-}
-
-#about .about-flex img {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
 }
 
 /* Home Tagline Styling */
@@ -301,3 +299,4 @@ footer {
     width: 100%;
   }
 }
+
