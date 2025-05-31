@@ -151,9 +151,8 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  margin-top: 60px;
+  margin-top: 60px; /* Reduced vertical gap from 140px */
   margin-bottom: 40px;
-  padding: 0 10px; /* Adds 10px padding left and right */
 }
 
 .bottom-image-row img {
@@ -300,5 +299,10 @@ footer {
 
   .bottom-image-row img {
     width: 100%;
+  }
+
+  /* Show only the first image on mobile, hide others */
+  .bottom-image-row img:not(:first-child) {
+    display: none;
   }
 }
