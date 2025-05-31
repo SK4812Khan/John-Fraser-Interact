@@ -16,7 +16,7 @@ const taglines = [
   "Together We Thrive 🤝"
 ];
 
-const taglineElement = document.getElementById("home-tagline");
+const taglineElement = document.querySelector("home-tagline");
 if (taglineElement) {
   const randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
   taglineElement.textContent = randomTagline;
