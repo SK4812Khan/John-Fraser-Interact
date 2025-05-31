@@ -205,11 +205,13 @@ footer {
 }
 
 #about .rotary-text {
-  width: 100%;
+  max-width: 50%;
+  text-align: left;
   font-size: 2em;
   font-weight: 600;
   line-height: 1.6;
 }
+
 
 #about .about-flex img {
   width: 100%;
