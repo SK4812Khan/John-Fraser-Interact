@@ -204,4 +204,15 @@ footer {
   }
 }
 
+/* Padding for bottom images on home and events pages */
+.bottom-image-row img:first-child {
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.bottom-image-row img:last-child {
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
 /* Other existing styles you had remain unchanged */
