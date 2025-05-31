@@ -303,3 +303,10 @@ footer {
     display: none;
   }
 }
+
+@media (max-width: 600px) {
+  #about .rotary-text {
+    font-size: 1.2em; /* or adjust to 1.4em, 1em, etc. as needed */
+  }
+}
+
