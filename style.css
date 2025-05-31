@@ -147,12 +147,11 @@ footer {
 }
 
 /* Desktop Logo Display */
-/* Reduced vertical gap between home text and images */
 .bottom-image-row {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  margin-top: 60px; /* Reduced gap for desktop */
+  margin-top: 60px; /* Reduced vertical gap from 140px */
   margin-bottom: 40px;
 }
 
@@ -173,14 +172,13 @@ footer {
   margin-bottom: 100px;
 }
 
-  #about .about-flex {
-    flex-direction: column;
-    align-items: center;
-  }
+#about .about-flex {
+  flex-direction: column;
+  align-items: center;
+}
 
-  #about .about-flex img {
-    margin-top: 20px;
-  }
+#about .about-flex img {
+  margin-top: 20px;
 }
 
 /* About Section Adjustments */
@@ -205,12 +203,10 @@ footer {
 }
 
 #about .rotary-text {
-  width: 50%;      /* exactly half width of the parent container */
+  width: 100%;
   font-size: 2em;
   font-weight: 600;
   line-height: 1.6;
-  margin-left: 0;  /* no left margin */
-  text-align: left;
 }
 
 #about .about-flex img {
@@ -243,7 +239,7 @@ footer {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Contact Page Social Media Images */
+/* Contact Page Social Media Images - updated */
 .contact-image-row {
   display: flex;
   justify-content: center;
@@ -254,11 +250,13 @@ footer {
 }
 
 .contact-image-row img {
-  width: 300px;
+  width: 400px;          /* Increased size for desktop/laptop */
   max-width: 90vw;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: none !important;  /* Removed green outline */
+  border: none !important;
+  outline: none !important;
   transition: transform 0.3s ease;
 }
 
@@ -266,7 +264,23 @@ footer {
   transform: scale(1.05);
 }
 
-/* Responsive Adjustments */
+.contact-image-row img:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Stack images vertically on small screens (Instagram first) */
+@media (max-width: 600px) {
+  .contact-image-row {
+    flex-direction: column-reverse;
+  }
+
+  .contact-image-row img {
+    width: 80%;
+  }
+}
+
+/* Responsive adjustments */
 @media (max-width: 600px) {
   .top-header img {
     display: none;
@@ -276,23 +290,14 @@ footer {
     font-size: 2.5em; /* optional: slightly smaller on mobile */
   }
 
-  /* Stack bottom images vertically on mobile only */
+  /* Stack bottom images vertically on mobile */
   .bottom-image-row {
     flex-direction: column;
-    margin-top: 40px; /* smaller margin on mobile */
     gap: 20px;
+    margin-top: 30px; /* Adjust vertical gap for mobile as well */
   }
 
   .bottom-image-row img {
-    width: 100%; /* full width images on mobile */
-  }
-
-  /* Contact images stacked vertically */
-  .contact-image-row {
-    flex-direction: column-reverse;
-  }
-
-  .contact-image-row img {
-    width: 80%;
+    width: 100%;
   }
 }
