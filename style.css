@@ -250,3 +250,37 @@ footer {
     font-size: 2.5em; /* optional: slightly smaller on mobile */
   }
 }
+
+/* Contact Page Social Media Images */
+.contact-image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-image-row img {
+  width: 300px;
+  max-width: 90vw;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.contact-image-row img:hover {
+  transform: scale(1.05);
+}
+
+/* Stack images vertically on small screens (Instagram first) */
+@media (max-width: 600px) {
+  .contact-image-row {
+    flex-direction: column-reverse;
+  }
+
+  .contact-image-row img {
+    width: 80%;
+  }
+}
