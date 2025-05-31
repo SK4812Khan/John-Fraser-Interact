@@ -151,7 +151,7 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  margin-top: 60px; /* Reduced vertical gap from 140px */
+  margin-top: 60px;
   margin-bottom: 40px;
 }
 
@@ -172,26 +172,28 @@ footer {
   margin-bottom: 100px;
 }
 
-/* Changed: Align children to start (left) */
+/* ABOUT FLEX – side-by-side layout */
 #about .about-flex {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
   gap: 30px;
-  justify-content: flex-start; /* <-- ensures left alignment */
 }
 
-/* Rotary text left aligned and no extra margin */
+/* Rotary text on the left */
 #about .rotary-text {
-  width: auto;
+  width: 50%;
   font-size: 2em;
   font-weight: 600;
   line-height: 1.6;
-  text-align: left;  /* left align text */
+  text-align: left;
   margin-left: 20px;
 }
 
+/* Image on the right */
 #about .about-flex img {
-  width: 100%;
+  width: 50%;
   border-radius: 10px;
   object-fit: cover;
   margin-top: 20px;
@@ -211,7 +213,6 @@ footer {
   font-weight: bold;
   text-align: left;
 }
-
 
 /* Home Tagline Styling */
 #home-tagline {
@@ -237,7 +238,7 @@ footer {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Contact Page Social Media Images - updated */
+/* Contact Page Social Media Images */
 .contact-image-row {
   display: flex;
   justify-content: center;
@@ -248,11 +249,11 @@ footer {
 }
 
 .contact-image-row img {
-  width: 400px;          /* Increased size for desktop/laptop */
+  width: 400px;
   max-width: 90vw;
   height: auto;
   border-radius: 10px;
-  box-shadow: none !important;  /* Removed green outline */
+  box-shadow: none !important;
   border: none !important;
   outline: none !important;
   transition: transform 0.3s ease;
@@ -267,7 +268,31 @@ footer {
   box-shadow: none !important;
 }
 
-/* Stack images vertically on small screens (Instagram first) */
+/* Responsive: Stack About section on mobile + center text */
+@media (max-width: 768px) {
+  #about .about-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #about .rotary-text,
+  #about .about-flex img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #about .rotary-text {
+    text-align: center;
+  }
+
+  #about .section-content,
+  #about .section-content h1 {
+    text-align: center;
+  }
+}
+
+/* Stack contact images vertically on small screens (Instagram first) */
 @media (max-width: 600px) {
   .contact-image-row {
     flex-direction: column-reverse;
@@ -285,18 +310,16 @@ footer {
   }
 
   .top-header h1 {
-    font-size: 2.5em; /* optional: slightly smaller on mobile */
+    font-size: 2.5em;
   }
 
-  /* Stack bottom images vertically on mobile */
   .bottom-image-row {
     flex-direction: column;
     gap: 20px;
-    margin-top: 30px; /* Adjust vertical gap for mobile as well */
+    margin-top: 30px;
   }
 
   .bottom-image-row img {
     width: 100%;
   }
 }
-
