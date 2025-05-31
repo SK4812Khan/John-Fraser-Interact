@@ -29,6 +29,15 @@ body {
   font-size: 1.2em;
 }
 
+/* Universal image hover effect */
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
 /* Top Header Above Navbar */
 .top-header {
   background-color: #046344;
@@ -59,6 +68,12 @@ body {
   flex-grow: 1;
   text-align: center;
   padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.top-header h1:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
 }
 
 /* Header/Nav Styles */
@@ -91,10 +106,12 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.8em;
+  transition: transform 0.3s ease;
 }
 
 nav ul li a:hover {
   color: #ffcc00;
+  transform: scale(1.05);
 }
 
 /* Home Section */
@@ -265,6 +282,18 @@ footer {
 .contact-image-row img:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+/* Fade-in animation styles */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Mobile Styles */
