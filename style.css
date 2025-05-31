@@ -205,10 +205,12 @@ footer {
 }
 
 #about .rotary-text {
-  width: 100%;
+  width: 50%;      /* exactly half width of the parent container */
   font-size: 2em;
   font-weight: 600;
   line-height: 1.6;
+  margin-left: 0;  /* no left margin */
+  text-align: left;
 }
 
 #about .about-flex img {
