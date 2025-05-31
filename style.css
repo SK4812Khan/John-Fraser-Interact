@@ -175,38 +175,38 @@ footer {
 /* ABOUT FLEX – side-by-side layout */
 #about .about-flex {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-direction: row;
-  gap: 30px;
+  flex-direction: column;      /* Stack vertically */
+  align-items: flex-start;     /* Align everything to the left */
+  gap: 20px;                   /* Space between text and image */
 }
 
-/* Rotary text on the left */
+/* Rotary text block (top) */
 #about .rotary-text {
-  width: 50%;
+  width: 100%;                 /* Same width as the image */
   font-size: 2em;
   font-weight: 600;
   line-height: 1.6;
   text-align: left;
-  margin-left: 20px;
+  margin: 0;                   /* No left margin */
+  padding: 0;                  /* No left padding */
 }
 
-/* Image on the right */
+/* Image block (bottom) */
 #about .about-flex img {
-  width: 50%;
+  width: 100%;                 /* Image fills same width as text */
   border-radius: 10px;
   object-fit: cover;
-  margin-top: 20px;
+  margin: 0;                   /* No top/left margins */
 }
 
-/* About Section Adjustments */
+/* About Section Container */
 #about .section-content {
   width: 90%;
-  margin-left: 10px;
-  margin-right: auto;
+  margin: 0 auto;              /* Center the container */
   text-align: left;
 }
 
+/* Section heading */
 #about .section-content h1 {
   font-size: 3.5em;
   margin-bottom: 20px;
