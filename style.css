@@ -146,73 +146,158 @@ footer {
   color: white;
 }
 
-/* ABOUT FLEX – side-by-side layout with 3 columns */
-#about .about-flex {
+/* Desktop Logo Display */
+.bottom-image-row {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: nowrap;
-  margin-top: 40px;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 60px; /* Reduced vertical gap from 140px */
+  margin-bottom: 40px;
 }
 
-/* Images on left and right */
-#about .about-flex .side-image {
-  flex: 1 1 25%;
-  max-width: 300px;
+.bottom-image-row img {
+  width: 32%;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Center text container */
-#about .rotary-text {
-  flex: 1 1 50%;
-  font-size: 1.8em;
-  font-weight: 600;
-  line-height: 1.6;
-  text-align: center;
-  color: white;
-  padding: 0 10px;
+#about .bottom-image-row,
+#events .bottom-image-row {
+  margin-top: 180px;
 }
 
-/* Section heading */
+#about,
+#events {
+  margin-bottom: 100px;
+}
+
+#about .about-flex {
+  flex-direction: column;
+  align-items: center;
+}
+
+#about .about-flex img {
+  margin-top: 20px;
+}
+
+/* About Section Adjustments */
+#about .section-content {
+  width: 90%;
+  margin-left: 10px;
+  margin-right: auto;
+  text-align: left;
+}
+
 #about .section-content h1 {
   font-size: 3.5em;
   margin-bottom: 20px;
   font-weight: bold;
+  text-align: left;
+}
+
+#about .about-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+#about .rotary-text {
+  width: 100%;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+#about .about-flex img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Home Tagline Styling */
+#home-tagline {
   text-align: center;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.teampic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.teampic img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Page Social Media Images - updated */
+.contact-image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-image-row img {
+  width: 400px;          /* Increased size for desktop/laptop */
+  max-width: 90vw;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: none !important;  /* Removed green outline */
+  border: none !important;
+  outline: none !important;
+  transition: transform 0.3s ease;
+}
+
+.contact-image-row img:hover {
+  transform: scale(1.05);
+}
+
+.contact-image-row img:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Stack images vertically on small screens (Instagram first) */
+@media (max-width: 600px) {
+  .contact-image-row {
+    flex-direction: column-reverse;
+  }
+
+  .contact-image-row img {
+    width: 80%;
+  }
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-  #about .about-flex {
+@media (max-width: 600px) {
+  .top-header img {
+    display: none;
+  }
+
+  .top-header h1 {
+    font-size: 2.5em; /* optional: slightly smaller on mobile */
+  }
+
+  /* Stack bottom images vertically on mobile */
+  .bottom-image-row {
     flex-direction: column;
     gap: 20px;
+    margin-top: 30px; /* Adjust vertical gap for mobile as well */
   }
 
-  #about .about-flex .side-image,
-  #about .rotary-text {
-    flex: none;
-    max-width: 100%;
-  }
-
-  #about .rotary-text {
-    text-align: center;
-    font-size: 1.5em;
+  .bottom-image-row img {
+    width: 100%;
   }
 }
-
-/* Padding for bottom images on home and events pages */
-.bottom-image-row img:first-child {
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
-
-.bottom-image-row img:last-child {
-  padding-bottom: 10px;
-  padding-right: 10px;
-}
-
-/* Other existing styles you had remain unchanged */
