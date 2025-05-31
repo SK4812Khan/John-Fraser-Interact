@@ -177,7 +177,7 @@ footer {
   display: flex;
   align-items: flex-start;
   gap: 30px;
-  justify-content: flex-start; /* <-- changed from default (center) */
+  justify-content: flex-start; /* <-- ensures left alignment */
 }
 
 /* Rotary text left aligned and no extra margin */
@@ -186,9 +186,9 @@ footer {
   font-size: 2em;
   font-weight: 600;
   line-height: 1.6;
-  text-align: left;  /* <-- added */
-  margin-left: 0;    /* <-- added */
-  padding-left: 0;   /* <-- added */
+  text-align: left;  /* left align text */
+  margin-left: 0;    /* remove left margin */
+  padding-left: 0;   /* remove left padding */
 }
 
 #about .about-flex img {
@@ -212,6 +212,7 @@ footer {
   font-weight: bold;
   text-align: left;
 }
+
 
 /* Home Tagline Styling */
 #home-tagline {
