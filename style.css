@@ -222,6 +222,7 @@ footer {
   font-size: 2em;
   font-weight: 600;
   line-height: 1.6;
+  text-align: center;
 }
 
 #about .about-flex img {
