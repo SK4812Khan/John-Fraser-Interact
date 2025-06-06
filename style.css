@@ -19,14 +19,20 @@
 }
 
 body {
-  background-color: #043f2b;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: 'Ibarra Real Nova', serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
   font-size: 1.2em;
+  transition: opacity 0.4s ease;
+  opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
 }
 
 /* Universal image hover effect */
@@ -158,9 +164,9 @@ footer {
   text-align: center;
   font-size: 1.2em;
   padding: 20px 0;
-  border-top: 1px solid #ffffff33;
-  background-color: #033027;
-  color: white;
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  color: black;
 }
 
 /* Desktop Logo Display */
@@ -337,14 +343,5 @@ footer {
   #about .rotary-text {
     font-size: 1.2em;
   }
-}
-
-body {
-  transition: opacity 0.4s ease;
-  opacity: 1;
-}
-
-body.fade-out {
-  opacity: 0;
 }
 
