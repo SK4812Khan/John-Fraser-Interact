@@ -345,3 +345,8 @@ footer {
   }
 }
 
+@media (max-width: 960px) {
+  .top-header img {
+    display: none;
+  }
+}
