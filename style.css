@@ -19,8 +19,8 @@
 }
 
 body {
-  background-color: #2a2b2b;
-  color: white;
+  background-color: #ccedd9;
+  color: #034d28; /* Rich forest green */
   font-family: 'Ibarra Real Nova', serif;
   min-height: 100vh;
   display: flex;
@@ -46,7 +46,7 @@ img:hover {
 
 /* Top Header Above Navbar */
 .top-header {
-  background-color: #046344;
+  background-color: #046344; /* green */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +68,7 @@ img:hover {
 .top-header h1 {
   font-size: 3.5em;
   font-weight: bold;
-  color: white;
+  color: white; /* keep white */
   margin: 0;
   line-height: 1;
   flex-grow: 1;
@@ -84,7 +84,7 @@ img:hover {
 
 /* Header/Nav Styles */
 header {
-  background-color: #033027;
+  background-color: #033027; /* dark green */
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -108,7 +108,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: white; /* keep white */
   text-decoration: none;
   font-weight: bold;
   font-size: 1.8em;
@@ -151,11 +151,13 @@ main {
 .section-content h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: #034d28; /* Ensure headings also use forest green */
 }
 
 .section-content p {
   font-size: 1.8em;
   margin-bottom: 20px;
+  color: #034d28; /* paragraph text in forest green */
 }
 
 /* Footer */
@@ -165,8 +167,8 @@ footer {
   font-size: 1.2em;
   padding: 20px 0;
   border-top: 1px solid #ffffff33;
-  background-color: #033027;
-  color: white;
+  background-color: #033027; /* dark green */
+  color: white; /* keep white */
 }
 
 /* Desktop Logo Display */
@@ -208,6 +210,7 @@ footer {
   width: 90%;
   margin: 0 auto;
   text-align: center;
+  color: #034d28; /* forest green for about section text */
 }
 
 #about .section-content h1 {
@@ -215,6 +218,7 @@ footer {
   margin-bottom: 20px;
   font-weight: bold;
   text-align: center;
+  color: #034d28;
 }
 
 #about .about-flex {
@@ -229,6 +233,7 @@ footer {
   font-weight: 600;
   line-height: 1.6;
   text-align: center;
+  color: #034d28;
 }
 
 #about .about-flex img {
@@ -244,6 +249,7 @@ footer {
   font-weight: 600;
   margin-top: 50px;
   margin-bottom: 10px;
+  color: #034d28;
 }
 
 .teampic {
@@ -338,10 +344,12 @@ footer {
   #home-tagline {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #034d28;
   }
 
   #about .rotary-text {
     font-size: 1.2em;
+    color: #034d28;
   }
 }
 
@@ -349,4 +357,6 @@ footer {
   .top-header img {
     display: none;
   }
+}
+
 }
