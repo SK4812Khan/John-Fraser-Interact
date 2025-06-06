@@ -19,8 +19,8 @@
 }
 
 body {
-  background-color: #f9f9f9;
-  color: black;
+  background-color: #2a2b2b;
+  color: white;
   font-family: 'Ibarra Real Nova', serif;
   min-height: 100vh;
   display: flex;
@@ -164,9 +164,9 @@ footer {
   text-align: center;
   font-size: 1.2em;
   padding: 20px 0;
-  border-top: 1px solid #cccccc;
-  background-color: #046344; 
-  color: white; 
+  border-top: 1px solid #ffffff33;
+  background-color: #033027;
+  color: white;
 }
 
 /* Desktop Logo Display */
