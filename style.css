@@ -20,7 +20,7 @@
 
 body {
   background-color: #ccedd9;
-  color: #034d28; /* Rich forest green */
+  color: #1743a0; /* dblue */
   font-family: 'Ibarra Real Nova', serif;
   min-height: 100vh;
   display: flex;
@@ -46,7 +46,7 @@ img:hover {
 
 /* Top Header Above Navbar */
 .top-header {
-  background-color: #046344; /* green */
+  background-color: #2b7cdd; /* blue */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +84,7 @@ img:hover {
 
 /* Header/Nav Styles */
 header {
-  background-color: #033027; /* dark green */
+  background-color: #1743a0; /* dblue */
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -116,7 +116,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffcc00;
+  color: #aec7e8;
   transform: scale(1.05);
 }
 
@@ -151,13 +151,13 @@ main {
 .section-content h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #034d28; /* Ensure headings also use forest green */
+  color: #2b7cdd; 
 }
 
 .section-content p {
   font-size: 1.8em;
   margin-bottom: 20px;
-  color: #034d28; /* paragraph text in forest green */
+  color: #2b7cdd;
 }
 
 /* Footer */
@@ -167,7 +167,7 @@ footer {
   font-size: 1.2em;
   padding: 20px 0;
   border-top: 1px solid #ffffff33;
-  background-color: #033027; /* dark green */
+  background-color: #2b7cdd; /* dark green */
   color: white; /* keep white */
 }
 
@@ -210,7 +210,7 @@ footer {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  color: #034d28; /* forest green for about section text */
+  color: #2b7cdd; /* forest green for about section text */
 }
 
 #about .section-content h1 {
@@ -218,7 +218,7 @@ footer {
   margin-bottom: 20px;
   font-weight: bold;
   text-align: center;
-  color: #034d28;
+  color: #2b7cdd;
 }
 
 #about .about-flex {
@@ -233,7 +233,7 @@ footer {
   font-weight: 600;
   line-height: 1.6;
   text-align: center;
-  color: #034d28;
+  color: #2b7cdd;
 }
 
 #about .about-flex img {
@@ -249,7 +249,7 @@ footer {
   font-weight: 600;
   margin-top: 50px;
   margin-bottom: 10px;
-  color: #034d28;
+  color: #2b7cdd;
 }
 
 .teampic {
@@ -344,12 +344,12 @@ footer {
   #home-tagline {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #034d28;
+    color: #2b7cdd;
   }
 
   #about .rotary-text {
     font-size: 1.2em;
-    color: #034d28;
+    color: #2b7cdd;
   }
 }
 
