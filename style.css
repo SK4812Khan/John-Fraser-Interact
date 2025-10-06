@@ -20,7 +20,7 @@
 
 body {
   background-color: #cce8ed;
-  color: #2b7cdd; /* main dark blue */
+  color: #1743a0; /* dark blue for all text except header title */
   font-family: 'Ibarra Real Nova', serif;
   min-height: 100vh;
   display: flex;
@@ -46,7 +46,7 @@ img:hover {
 
 /* Top Header Above Navbar */
 .top-header {
-  background-color: #2b7cdd; /* blue header behind logo */
+  background-color: #2b7cdd; /* keep header background blue */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +68,7 @@ img:hover {
 .top-header h1 {
   font-size: 3.5em;
   font-weight: bold;
-  color: white;
+  color: white; /* JFSS INTERACT stays white */
   margin: 0;
   line-height: 1;
   flex-grow: 1;
@@ -84,10 +84,12 @@ img:hover {
 
 /* Header/Nav Styles */
 header {
-  background-color: transparent; /* removed dark blue bar */
+  background-color: transparent; /* remove dark blue nav bar */
   width: 100vw;
   margin: 0;
   padding: 0;
+  border: none;
+  box-shadow: none;
 }
 
 nav {
@@ -108,7 +110,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #2b7cdd; /* dark blue nav text */
+  color: #1743a0; /* dark blue nav links */
   text-decoration: none;
   font-weight: bold;
   font-size: 1.8em;
@@ -118,7 +120,7 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline; /* underline on hover */
   transform: scale(1.05);
-  color: #2b7cdd; /* keep dark blue on hover */
+  color: #1743a0;
 }
 
 /* Home Section */
@@ -131,7 +133,7 @@ nav ul li a:hover {
   font-size: 4.5em;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #2b7cdd; /* dark blue */
+  color: #1743a0;
 }
 
 /* Main and Section Styles */
@@ -148,19 +150,19 @@ main {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  color: #2b7cdd;
+  color: #1743a0;
 }
 
 .section-content h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #2b7cdd;
+  color: #1743a0;
 }
 
 .section-content p {
   font-size: 1.8em;
   margin-bottom: 20px;
-  color: #2b7cdd;
+  color: #1743a0;
 }
 
 /* Footer */
@@ -170,8 +172,8 @@ footer {
   font-size: 1.2em;
   padding: 20px 0;
   border-top: 1px solid #ffffff33;
-  background-color: #2b7cdd; /* dark blue footer */
-  color: white;
+  background-color: #2b7cdd;
+  color: #1743a0; /* changed to dark blue */
 }
 
 /* Desktop Logo Display */
@@ -213,7 +215,7 @@ footer {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  color: #2b7cdd;
+  color: #1743a0;
 }
 
 #about .section-content h1 {
@@ -221,7 +223,7 @@ footer {
   margin-bottom: 20px;
   font-weight: bold;
   text-align: center;
-  color: #2b7cdd;
+  color: #1743a0;
 }
 
 #about .about-flex {
@@ -236,7 +238,7 @@ footer {
   font-weight: 600;
   line-height: 1.6;
   text-align: center;
-  color: #2b7cdd;
+  color: #1743a0;
 }
 
 #about .about-flex img {
@@ -252,7 +254,7 @@ footer {
   font-weight: 600;
   margin-top: 50px;
   margin-bottom: 10px;
-  color: #2b7cdd;
+  color: #1743a0;
 }
 
 .teampic {
@@ -300,4 +302,65 @@ footer {
   box-shadow: none !important;
 }
 
-/* Fad*
+/* Fade-in animation styles */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .top-header img {
+    display: none;
+  }
+
+  .top-header h1 {
+    font-size: 2.5em;
+  }
+
+  .bottom-image-row {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .bottom-image-row img {
+    width: 100%;
+  }
+
+  .bottom-image-row img:not(:first-child) {
+    display: none;
+  }
+
+  .contact-image-row {
+    flex-direction: column-reverse;
+  }
+
+  .contact-image-row img {
+    width: 80%;
+  }
+
+  #home-tagline {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #1743a0;
+  }
+
+  #about .rotary-text {
+    font-size: 1.2em;
+    color: #1743a0;
+  }
+}
+
+@media (max-width: 960px) {
+  .top-header img {
+    display: none;
+  }
+}
+
