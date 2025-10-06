@@ -20,7 +20,7 @@
 
 body {
   background-color: #cce8ed;
-  color: #1743a0; /* dblue */
+  color: #2b7cdd; /* changed to blue */
   font-family: 'Ibarra Real Nova', serif;
   min-height: 100vh;
   display: flex;
@@ -130,6 +130,7 @@ nav ul li a:hover {
   font-size: 4.5em;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #2b7cdd; /* changed to blue */
 }
 
 /* Main and Section Styles */
@@ -146,12 +147,13 @@ main {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+  color: #2b7cdd; /* changed to blue */
 }
 
 .section-content h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #2b7cdd; 
+  color: #2b7cdd;
 }
 
 .section-content p {
@@ -210,7 +212,7 @@ footer {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  color: #2b7cdd; /* forest green for about section text */
+  color: #2b7cdd; /* changed to blue */
 }
 
 #about .section-content h1 {
@@ -357,6 +359,4 @@ footer {
   .top-header img {
     display: none;
   }
-}
-
 }
