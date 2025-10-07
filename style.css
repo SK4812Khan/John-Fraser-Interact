@@ -20,7 +20,7 @@
 
 body {
   background-color: #cce8ed;
-  color: #1743a0; /* dark blue for all text except header title */
+  color: #1743a0;
   font-family: 'Ibarra Real Nova', serif;
   min-height: 100vh;
   display: flex;
@@ -32,9 +32,6 @@ body {
 
 body.fade-in {
   opacity: 1;
-}
-
-body.fade-out {
 }
 
 /* Universal image hover effect */
@@ -77,51 +74,55 @@ nav ul li a:hover {
   color: #1743a0;
 }
 
-/* Home Section */
-#home {
+/* Home Page Styling */
+#home-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+#home-logo img {
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Tagline */
+#home-tagline {
   text-align: center;
-  margin-top: 40px;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  color: white;
 }
 
-#home h1 {
-  font-size: 4.5em;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #1743a0;
-}
-
-/* Main and Section Styles */
-main {
-  margin-top: 40px;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  flex: 1;
-}
-
+/* Section content for Service Above Self */
 .section-content {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  color: #1743a0;
+  color: white;
 }
 
 .section-content h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #1743a0;
+  font-size: 1.8em; /* same as paragraph below */
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .section-content p {
   font-size: 1.8em;
-  margin-bottom: 20px;
-  color: #1743a0;
+  font-weight: 400;
 }
 
 /* Footer */
 footer {
-  margin-top: 60px;
+  margin-top: auto;
   text-align: center;
   font-size: 1.2em;
   padding: 20px 0;
@@ -130,7 +131,7 @@ footer {
   color: white;
 }
 
-/* Desktop Logo Display */
+/* Contact & Other Sections */
 .bottom-image-row {
   display: flex;
   justify-content: space-between;
@@ -146,87 +147,6 @@ footer {
   object-fit: cover;
 }
 
-#about .bottom-image-row,
-#events .bottom-image-row {
-  margin-top: 30px;
-}
-
-#about,
-#events {
-  margin-bottom: 30px;
-}
-
-#about .about-flex {
-  flex-direction: column;
-  align-items: center;
-}
-
-#about .about-flex img {
-  margin-top: 20px;
-}
-
-#about .section-content {
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  color: #1743a0;
-}
-
-#about .section-content h1 {
-  font-size: 3.5em;
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-align: center;
-  color: #1743a0;
-}
-
-#about .about-flex {
-  display: flex;
-  align-items: flex-start;
-  gap: 30px;
-}
-
-#about .rotary-text {
-  width: 100%;
-  font-size: 2em;
-  font-weight: 600;
-  line-height: 1.6;
-  text-align: center;
-  color: #1743a0;
-}
-
-#about .about-flex img {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-/* Home Tagline Styling */
-#home-tagline {
-  text-align: center;
-  font-size: 2.5em;
-  font-weight: 600;
-  margin-top: 50px;
-  margin-bottom: 10px;
-  color: #1743a0;
-}
-
-.teampic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.teampic img {
-  width: 100%;
-  max-width: 900px;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Contact Page Social Media Images */
 .contact-image-row {
   display: flex;
   justify-content: center;
@@ -251,11 +171,6 @@ footer {
   transform: scale(1.05);
 }
 
-.contact-image-row img:focus {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
 /* Fade-in animation styles */
 .fade-in {
   transform: translateY(30px);
@@ -269,50 +184,18 @@ footer {
 
 /* Mobile Styles */
 @media (max-width: 600px) {
-  .top-header img {
-    display: none;
-  }
-
-  .top-header h1 {
-    font-size: 2.5em;
-  }
-
-  .bottom-image-row {
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 30px;
-  }
-
-  .bottom-image-row img {
-    width: 100%;
-  }
-
-  .bottom-image-row img:not(:first-child) {
-    display: none;
-  }
-
-  .contact-image-row {
-    flex-direction: column-reverse;
-  }
-
-  .contact-image-row img {
+  #home-logo img {
     width: 80%;
+    max-width: 300px;
   }
 
   #home-tagline {
     font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #1743a0;
+    margin-bottom: 40px;
   }
 
-  #about .rotary-text {
-    font-size: 1.2em;
-    color: #1743a0;
-  }
-}
-
-@media (max-width: 960px) {
-  .top-header img {
-    display: none;
+  .section-content h2,
+  .section-content p {
+    font-size: 1.5em;
   }
 }
