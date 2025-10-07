@@ -367,3 +367,9 @@ footer {
     display: none;
   }
 }
+
+body {
+  opacity: 1 !important;
+  color: #1743a0; /* or whatever text color you want globally */
+}
+
