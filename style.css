@@ -32,7 +32,7 @@ html, body {
 
 body {
   background-color: #cce8ed;
-  color: #1743a0; /* fixed from white so text is visible */
+  color: white; /* changed to white for all text */
   font-family: 'Ibarra Real Nova', serif;
   min-height: 100vh;
   display: flex;
@@ -40,7 +40,6 @@ body {
   position: relative;
   font-size: 1.2em;
 
-  /* fixed fade-in system */
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 1s ease-out, transform 1s ease-out;
@@ -88,7 +87,7 @@ img:hover {
 .top-header h1 {
   font-size: 3.5em;
   font-weight: bold;
-  color: white; /* JFSS INTERACT stays white */
+  color: white;
   margin: 0;
   line-height: 1;
   flex-grow: 1;
@@ -132,7 +131,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #1743a0;
+  color: white; /* white nav links */
   text-decoration: none;
   font-weight: bold;
   font-size: 1.8em;
@@ -142,7 +141,7 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
   transform: scale(1.05);
-  color: #1743a0;
+  color: white;
 }
 
 /* ==========================
@@ -157,7 +156,7 @@ nav ul li a:hover {
   font-size: 4.5em;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #1743a0;
+  color: white;
 }
 
 /* ==========================
@@ -176,19 +175,19 @@ main {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  color: #1743a0;
+  color: white;
 }
 
 .section-content h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #1743a0;
+  color: white;
 }
 
 .section-content p {
   font-size: 1.8em;
   margin-bottom: 20px;
-  color: #1743a0;
+  color: white;
 }
 
 /* ==========================
@@ -245,7 +244,7 @@ footer {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  color: #1743a0;
+  color: white;
 }
 
 #about .section-content h1 {
@@ -253,7 +252,7 @@ footer {
   margin-bottom: 20px;
   font-weight: bold;
   text-align: center;
-  color: #1743a0;
+  color: white;
 }
 
 #about .about-flex {
@@ -268,7 +267,7 @@ footer {
   font-weight: 600;
   line-height: 1.6;
   text-align: center;
-  color: #1743a0;
+  color: white;
 }
 
 #about .about-flex img {
@@ -286,7 +285,7 @@ footer {
   font-weight: 600;
   margin-top: 50px;
   margin-bottom: 10px;
-  color: #1743a0;
+  color: white;
 }
 
 /* ==========================
@@ -390,12 +389,12 @@ footer {
   #home-tagline {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #1743a0;
+    color: white;
   }
 
   #about .rotary-text {
     font-size: 1.2em;
-    color: #1743a0;
+    color: white;
   }
 }
 
@@ -404,3 +403,4 @@ footer {
     display: none;
   }
 }
+
