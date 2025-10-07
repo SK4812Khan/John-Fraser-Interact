@@ -12,15 +12,19 @@
       padding: 0;
       width: 100%;
       min-height: 100%;
+      display: flex;
+      flex-direction: column;
       overflow-x: hidden;
+      color: white; /* All text white */
     }
 
     body {
-      background-image: url("bbl.png");
+      background-image: url("bbl.png"); /* Replace with your image */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       background-attachment: fixed;
+      flex: 1; /* So footer sticks to bottom */
     }
 
     /* Make nav transparent over background */
@@ -28,8 +32,33 @@
       background-color: transparent;
     }
 
+    nav ul li a {
+      color: white; /* Nav links white */
+    }
+
     nav ul li a:hover {
       text-decoration: underline;
+    }
+
+    main {
+      flex: 1; /* Main takes remaining space */
+    }
+
+    footer {
+      text-align: center;
+      font-size: 1.2em;
+      padding: 20px 0;
+      background-color: #1743a0; /* Keep footer color same */
+      color: white;
+      margin-top: auto; /* Push footer to bottom */
+    }
+
+    /* Optional: white text for sections */
+    #home-tagline p,
+    .section-content h2,
+    .section-content p,
+    .jfss-text {
+      color: white;
     }
   </style>
 </head>
@@ -47,8 +76,6 @@
       </ul>
     </nav>
   </header>
-
-  
 
   <!-- Service Above Self Message -->
   <section id="home-tagline">
