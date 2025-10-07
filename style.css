@@ -380,3 +380,9 @@ footer {
   }
 }
 
+#home .section-content h2,
+#home .section-content p {
+  color: white; /* force white for the homepage */
+}
+
+
