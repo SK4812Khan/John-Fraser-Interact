@@ -46,54 +46,6 @@ img:hover {
   transform: scale(1.05);
 }
 
-/* Top Header Above Navbar */
-.top-header {
-  background-color: #2b7cdd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100vw;
-  height: auto;
-  padding: 0 20px;
-}
-
-.top-header img {
-  height: 80px;
-  width: auto;
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.top-header h1 {
-  font-size: 3.5em;
-  font-weight: bold;
-  color: white; /* JFSS INTERACT stays white */
-  margin: 0;
-  line-height: 1;
-  flex-grow: 1;
-  text-align: center;
-  padding: 20px;
-  transition: transform 0.3s ease;
-}
-
-.top-header h1:hover {
-  transform: scale(1.05);
-  text-shadow: 0 0 10px #a7c4a0, 0 0 20px #a7c4a0;
-}
-
-/* Header/Nav Styles */
-header {
-  background-color: transparent;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  border: none;
-  box-shadow: none;
-}
-
 nav {
   width: 100%;
 }
