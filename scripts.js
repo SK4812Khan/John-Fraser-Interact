@@ -1,16 +1,7 @@
 // Smooth Welcome Animation on Page Load
 window.addEventListener("load", () => {
-  // Fade in the body
-  document.body.classList.add("fade-in");
-
-  // Fade in all content
-  document.querySelectorAll("body, .top-header, nav, main, .bottom-image-row, #home-tagline, footer").forEach(el => {
-    el.classList.add("fade-in");
-    // Trigger fade-in visibility after a short delay
-    setTimeout(() => {
-      el.classList.add("fade-in-visible");
-    }, 50);
-  });
+  // Fade in the entire body
+  document.body.classList.add("fade-in-visible");
 
   // Random Tagline on Each Refresh
   const taglines = [
@@ -23,23 +14,8 @@ window.addEventListener("load", () => {
 
   const taglineElement = document.querySelector("#home-tagline p");
   if (taglineElement) {
-    const randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
-    taglineElement.textContent = randomTagline;
+    taglineElement.textContent = taglines[Math.floor(Math.random() * taglines.length)];
   }
-
-  // Animate text on scroll (fade-in effect)
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("fade-in-visible");
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll(".section-content, .teampic, .bottom-image-row, .contact-image-row").forEach(el => {
-    el.classList.add("fade-in");
-    observer.observe(el);
-  });
 });
 
 // Smooth scroll for anchor links
@@ -67,4 +43,5 @@ document.querySelectorAll("a[href]").forEach(link => {
     });
   }
 });
+
 
