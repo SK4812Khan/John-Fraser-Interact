@@ -1,12 +1,8 @@
-/* ==========================
-   Import Google Fonts
-========================== */
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
-/* ==========================
-   Font Utility Classes
-========================== */
+/* Font Utility Classes */
 .ibarra-font {
   font-family: 'Ibarra Real Nova', serif;
 }
@@ -15,61 +11,35 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* ==========================
-   Reset and Base Styles
-========================== */
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  position: relative;
-  background-color: transparent; /* transparent so background shows */
-}
-
 body {
-  color: white;
+  background-color: #cce8ed;
+  color: #1743a0; /* dark blue for all text except header title */
   font-family: 'Ibarra Real Nova', serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
   font-size: 1.2em;
-
-  /* fade-in initial state */
-  transform: translateY(30px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  opacity: 0; /* start hidden for fade-in */
+  transition: opacity 1s ease-in;
 }
 
-/* fade-in when JS adds class */
-body.fade-in-visible {
+body.fade-in {
   opacity: 1;
-  transform: translateY(0);
 }
 
-/* ==========================
-   Background Image
-========================== */
-.bg-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("bbl.png"); /* make sure path is correct */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
+body.fade-out {
+  opacity: 0;
 }
 
-/* ==========================
-   Universal image hover
-========================== */
+/* Universal image hover effect */
 img {
   transition: transform 0.3s ease;
 }
@@ -78,11 +48,9 @@ img:hover {
   transform: scale(1.05);
 }
 
-/* ==========================
-   Top Header Above Navbar
-========================== */
+/* Top Header Above Navbar */
 .top-header {
-  background-color: rgba(255, 255, 255, 0.8); /* slightly transparent so background shows */
+  background-color: #2b7cdd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,7 +58,6 @@ img:hover {
   width: 100vw;
   height: auto;
   padding: 0 20px;
-  z-index: 2;
 }
 
 .top-header img {
@@ -105,7 +72,7 @@ img:hover {
 .top-header h1 {
   font-size: 3.5em;
   font-weight: bold;
-  color: white;
+  color: white; /* JFSS INTERACT stays white */
   margin: 0;
   line-height: 1;
   flex-grow: 1;
@@ -119,9 +86,7 @@ img:hover {
   text-shadow: 0 0 10px #a7c4a0, 0 0 20px #a7c4a0;
 }
 
-/* ==========================
-   Header/Nav Styles
-========================== */
+/* Header/Nav Styles */
 header {
   background-color: transparent;
   width: 100vw;
@@ -129,7 +94,6 @@ header {
   padding: 0;
   border: none;
   box-shadow: none;
-  z-index: 1;
 }
 
 nav {
@@ -150,7 +114,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #1743a0;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.8em;
@@ -160,43 +124,23 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
   transform: scale(1.05);
-  color: white;
+  color: #1743a0;
 }
 
-/* ==========================
-   JFSS Text & Home Tagline
-========================== */
-.jfss-text {
+/* Home Section */
+#home {
   text-align: center;
-  font-size: 1.8em;
+  margin-top: 40px;
+}
+
+#home h1 {
+  font-size: 4.5em;
   font-weight: bold;
-  color: white;
-  margin: 20px 0;
+  margin-bottom: 10px;
+  color: #1743a0;
 }
 
-#home-tagline {
-  text-align: center;
-  font-size: 1.8em;
-  margin-bottom: 40px;
-  color: white;
-}
-
-/* ==========================
-   Footer
-========================== */
-footer {
-  margin-top: auto;
-  text-align: center;
-  font-size: 1.2em;
-  padding: 20px 0;
-  border-top: 1px solid #ffffff33;
-  background-color: #2b7cdd;
-  color: white;
-}
-
-/* ==========================
-   Section / Main Content Styles
-========================== */
+/* Main and Section Styles */
 main {
   margin-top: 40px;
   max-width: 1000px;
@@ -210,20 +154,161 @@ main {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+  color: #1743a0;
+}
+
+.section-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #1743a0;
+}
+
+.section-content p {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #1743a0;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 20px 0;
+  border-top: 1px solid #ffffff33;
+  background-color: #1743a0;
   color: white;
 }
 
-.section-content h2,
-.section-content p,
-#about .section-content h1,
+/* Desktop Logo Display */
+.bottom-image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.bottom-image-row img {
+  width: 32%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#about .bottom-image-row,
+#events .bottom-image-row {
+  margin-top: 30px;
+}
+
+#about,
+#events {
+  margin-bottom: 30px;
+}
+
+#about .about-flex {
+  flex-direction: column;
+  align-items: center;
+}
+
+#about .about-flex img {
+  margin-top: 20px;
+}
+
+#about .section-content {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  color: #1743a0;
+}
+
+#about .section-content h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #1743a0;
+}
+
+#about .about-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
 #about .rotary-text {
-  color: white;
+  width: 100%;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+  color: #1743a0;
 }
 
-/* ==========================
-   Fade-in Animations
-========================== */
+#about .about-flex img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Home Tagline Styling */
+#home-tagline {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: #1743a0;
+}
+
+.teampic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.teampic img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Page Social Media Images */
+.contact-image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-image-row img {
+  width: 400px;
+  max-width: 90vw;
+  height: auto;
+  border-radius: 10px;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  transition: transform 0.3s ease;
+}
+
+.contact-image-row img:hover {
+  transform: scale(1.05);
+}
+
+.contact-image-row img:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Fade-in animation styles */
 .fade-in {
+  opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
@@ -233,9 +318,7 @@ main {
   transform: translateY(0);
 }
 
-/* ==========================
-   Mobile Styles
-========================== */
+/* Mobile Styles */
 @media (max-width: 600px) {
   .top-header img {
     display: none;
@@ -245,11 +328,42 @@ main {
     font-size: 2.5em;
   }
 
+  .bottom-image-row {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .bottom-image-row img {
+    width: 100%;
+  }
+
+  .bottom-image-row img:not(:first-child) {
+    display: none;
+  }
+
+  .contact-image-row {
+    flex-direction: column-reverse;
+  }
+
+  .contact-image-row img {
+    width: 80%;
+  }
+
   #home-tagline {
     font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #1743a0;
   }
 
   #about .rotary-text {
     font-size: 1.2em;
+    color: #1743a0;
+  }
+}
+
+@media (max-width: 960px) {
+  .top-header img {
+    display: none;
   }
 }
