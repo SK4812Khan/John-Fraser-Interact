@@ -1,8 +1,12 @@
-/* Import Google Fonts */
+/* ==========================
+   Import Google Fonts
+========================== */
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
-/* Font Utility Classes */
+/* ==========================
+   Font Utility Classes
+========================== */
 .ibarra-font {
   font-family: 'Ibarra Real Nova', serif;
 }
@@ -11,35 +15,45 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Reset and Base Styles */
+/* ==========================
+   Reset and Base Styles
+========================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #cce8ed;
-  color: white; /* dark blue for all text except header title */
+  color: #1743a0; /* fixed from white so text is visible */
   font-family: 'Ibarra Real Nova', serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
   font-size: 1.2em;
-  opacity: 0; /* start hidden for fade-in */
-  transition: opacity 1s ease-in;
-}
 
-body.fade-in {
-  opacity: 1;
-}
-
-body.fade-out {
+  /* fixed fade-in system */
   opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-/* Universal image hover effect */
+body.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================
+   Universal image hover
+========================== */
 img {
   transition: transform 0.3s ease;
 }
@@ -48,7 +62,9 @@ img:hover {
   transform: scale(1.05);
 }
 
-/* Top Header Above Navbar */
+/* ==========================
+   Top Header Above Navbar
+========================== */
 .top-header {
   background-color: white;
   display: flex;
@@ -86,7 +102,9 @@ img:hover {
   text-shadow: 0 0 10px #a7c4a0, 0 0 20px #a7c4a0;
 }
 
-/* Header/Nav Styles */
+/* ==========================
+   Header/Nav Styles
+========================== */
 header {
   background-color: transparent;
   width: 100vw;
@@ -127,7 +145,9 @@ nav ul li a:hover {
   color: #1743a0;
 }
 
-/* Home Section */
+/* ==========================
+   Home Section
+========================== */
 #home {
   text-align: center;
   margin-top: 40px;
@@ -140,7 +160,9 @@ nav ul li a:hover {
   color: #1743a0;
 }
 
-/* Main and Section Styles */
+/* ==========================
+   Main and Section Styles
+========================== */
 main {
   margin-top: 40px;
   max-width: 1000px;
@@ -154,22 +176,24 @@ main {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  color: white;
+  color: #1743a0;
 }
 
 .section-content h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: white;
+  color: #1743a0;
 }
 
 .section-content p {
   font-size: 1.8em;
   margin-bottom: 20px;
-  color: white;
+  color: #1743a0;
 }
 
-/* Footer */
+/* ==========================
+   Footer
+========================== */
 footer {
   margin-top: 60px;
   text-align: center;
@@ -180,7 +204,9 @@ footer {
   color: white;
 }
 
-/* Desktop Logo Display */
+/* ==========================
+   Desktop Logo Display
+========================== */
 .bottom-image-row {
   display: flex;
   justify-content: space-between;
@@ -219,7 +245,7 @@ footer {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  color: white;
+  color: #1743a0;
 }
 
 #about .section-content h1 {
@@ -227,7 +253,7 @@ footer {
   margin-bottom: 20px;
   font-weight: bold;
   text-align: center;
-  color: white;
+  color: #1743a0;
 }
 
 #about .about-flex {
@@ -242,7 +268,7 @@ footer {
   font-weight: 600;
   line-height: 1.6;
   text-align: center;
-  color: white;
+  color: #1743a0;
 }
 
 #about .about-flex img {
@@ -251,16 +277,21 @@ footer {
   object-fit: cover;
 }
 
-/* Home Tagline Styling */
+/* ==========================
+   Home Tagline Styling
+========================== */
 #home-tagline {
   text-align: center;
   font-size: 2.5em;
   font-weight: 600;
   margin-top: 50px;
   margin-bottom: 10px;
-  color: white;
+  color: #1743a0;
 }
 
+/* ==========================
+   Team Picture
+========================== */
 .teampic {
   display: flex;
   justify-content: center;
@@ -276,7 +307,9 @@ footer {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Contact Page Social Media Images */
+/* ==========================
+   Contact Page Social Media
+========================== */
 .contact-image-row {
   display: flex;
   justify-content: center;
@@ -306,7 +339,9 @@ footer {
   box-shadow: none !important;
 }
 
-/* Fade-in animation styles */
+/* ==========================
+   Fade-in animation styles
+========================== */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -318,7 +353,9 @@ footer {
   transform: translateY(0);
 }
 
-/* Mobile Styles */
+/* ==========================
+   Mobile Styles
+========================== */
 @media (max-width: 600px) {
   .top-header img {
     display: none;
@@ -367,9 +404,3 @@ footer {
     display: none;
   }
 }
-
-body {
-  opacity: 1 !important;
-  color: #1743a0; /* or whatever text color you want globally */
-}
-
