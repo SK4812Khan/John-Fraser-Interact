@@ -20,14 +20,18 @@
 
 body {
   background-color: #cce8ed;
-  color: #1743a0; /* dark blue for all text except header title */
+  color: white; /* dark blue for all text except header title */
   font-family: 'Ibarra Real Nova', serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
   font-size: 1.2em;
-  transition: opacity 0.4s ease;
+  opacity: 0; /* start hidden for fade-in */
+  transition: opacity 1s ease-in;
+}
+
+body.fade-in {
   opacity: 1;
 }
 
@@ -46,7 +50,7 @@ img:hover {
 
 /* Top Header Above Navbar */
 .top-header {
-  background-color: #2b7cdd; /* keep header background blue */
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +88,7 @@ img:hover {
 
 /* Header/Nav Styles */
 header {
-  background-color: transparent; /* remove dark blue nav bar */
+  background-color: transparent;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -110,7 +114,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #1743a0; /* dark blue nav links */
+  color: #1743a0;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.8em;
@@ -118,7 +122,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: underline; /* underline on hover */
+  text-decoration: underline;
   transform: scale(1.05);
   color: #1743a0;
 }
@@ -150,19 +154,19 @@ main {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  color: #1743a0;
+  color: white;
 }
 
 .section-content h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #1743a0;
+  color: white;
 }
 
 .section-content p {
   font-size: 1.8em;
   margin-bottom: 20px;
-  color: #1743a0;
+  color: white;
 }
 
 /* Footer */
@@ -172,8 +176,8 @@ footer {
   font-size: 1.2em;
   padding: 20px 0;
   border-top: 1px solid #ffffff33;
-  background-color: #1743a0;
-  color: white; /* changed to dark blue */
+  background-color: #ffffff33;
+  color: white;
 }
 
 /* Desktop Logo Display */
@@ -215,7 +219,7 @@ footer {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  color: #1743a0;
+  color: white;
 }
 
 #about .section-content h1 {
@@ -223,7 +227,7 @@ footer {
   margin-bottom: 20px;
   font-weight: bold;
   text-align: center;
-  color: #1743a0;
+  color: white;
 }
 
 #about .about-flex {
@@ -238,7 +242,7 @@ footer {
   font-weight: 600;
   line-height: 1.6;
   text-align: center;
-  color: #1743a0;
+  color: white;
 }
 
 #about .about-flex img {
@@ -254,7 +258,7 @@ footer {
   font-weight: 600;
   margin-top: 50px;
   margin-bottom: 10px;
-  color: #1743a0;
+  color: white;
 }
 
 .teampic {
@@ -363,4 +367,3 @@ footer {
     display: none;
   }
 }
-
