@@ -3,19 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | JFSS Interact Club</title>
   <link rel="stylesheet" href="style.css"/>
   <script src="js/scripts.js" defer></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-image: url("bbl.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Make nav transparent over background */
+    header {
+      background-color: transparent;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body class="ibarra-font">
-
-  <!-- Background Image -->
-  <div class="bg-image"></div>
-
-  <!-- Top Header (Optional) -->
-  <div class="top-header">
-    <img src="logo.png" alt="JFSS Logo"/>
-    <h1>JFSS Interact Club</h1>
-  </div>
 
   <!-- Navigation Bar -->
   <header>
@@ -38,7 +57,7 @@
     <p>Service Above Self | Making a Difference One Step at a Time.</p>
   </section>
 
-  <!-- Main Content (Optional) -->
+  <!-- Main Content -->
   <main>
     <section class="section-content fade-in">
       <h2>Welcome to JFSS Interact Club</h2>
