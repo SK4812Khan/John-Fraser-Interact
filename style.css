@@ -27,7 +27,6 @@ body {
   flex-direction: column;
   position: relative;
   font-size: 1.2em;
-  opacity: 0; /* start hidden for fade-in */
   transition: opacity 1s ease-in;
 }
 
@@ -36,7 +35,6 @@ body.fade-in {
 }
 
 body.fade-out {
-  opacity: 0;
 }
 
 /* Universal image hover effect */
@@ -308,7 +306,6 @@ footer {
 
 /* Fade-in animation styles */
 .fade-in {
-  opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
