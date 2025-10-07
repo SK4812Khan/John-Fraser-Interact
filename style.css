@@ -142,20 +142,23 @@ nav ul li a:hover {
 #home-logo {
   display: block;
   margin: 40px auto 20px auto;
-  width: 60%;      /* bigger than 35% */
-  max-width: 500px; /* larger max size */
+  width: 65%;      /* larger than 35% */
+  max-width: 600px; /* larger max size */
   height: auto;
   border-radius: 50%;
 }
 
-
 #home-tagline {
   text-align: center;
-  font-size: 1.8em; /* same size for both lines */
-  font-weight: 600;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: 40px;
-  color: #1743a0;
+}
+
+#home-tagline p {
+  color: white; /* force white */
+  font-size: 1.8em; /* uniform size */
+  font-weight: 600;
+  margin: 5px 0;
 }
 
 /* Main and Section Styles */
@@ -176,13 +179,13 @@ main {
 }
 
 .section-content h2 {
-  font-size: 2em; /* smaller for Service Above Self to match line size */
+  font-size: 2em;
   margin-bottom: 10px;
   color: #1743a0;
 }
 
 .section-content p {
-  font-size: 2em; /* match the above for uniformity */
+  font-size: 2em;
   margin-bottom: 20px;
   color: #1743a0;
 }
@@ -337,8 +340,8 @@ footer {
   }
 
   #home-logo {
-    width: 50%;
-    max-width: 200px;
+    width: 80%;
+    max-width: 300px;
     margin-top: 20px;
   }
 
@@ -364,9 +367,8 @@ footer {
     width: 80%;
   }
 
-  #home-tagline {
+  #home-tagline p {
     font-size: 1.5em;
-    margin-bottom: 20px;
   }
 
   #about .rotary-text {
@@ -379,10 +381,4 @@ footer {
     display: none;
   }
 }
-
-#home .section-content h2,
-#home .section-content p {
-  color: white; /* force white for the homepage */
-}
-
 
