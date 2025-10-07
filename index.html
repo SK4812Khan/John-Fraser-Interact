@@ -13,32 +13,70 @@
       padding: 0;
       width: 100%;
       min-height: 100%;
-      overflow-x: hidden; /* Prevents horizontal scroll */
+      overflow-x: hidden;
     }
 
     body {
-      background-image: url("Blue Minimalist Abstract Phone Wallpaper.png");
-      background-size: cover;        /* Fills the whole screen */
-      background-repeat: no-repeat;  /* No tiling */
-      background-position: center;   /* Centered image */
-      background-attachment: fixed;  /* Stays in place when scrolling */
+      background-image: url("4817.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
     }
 
-    /* Remove dark blue bar under nav */
     header {
       background-color: transparent;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+      margin: 0;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #1743a0; /* dark blue */
+      font-weight: bold;
+      font-size: 1.8em;
+      transition: transform 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+      transform: scale(1.05);
+    }
+
+    .jfss-text {
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #1743a0; /* same dark blue */
+      margin: 20px 0;
+    }
+
+    #home-tagline {
+      text-align: center;
+      font-size: 1.8em;
+      margin-bottom: 40px;
+      color: #1743a0;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      font-size: 1.2em;
+      padding: 20px 0;
+      border-top: 1px solid #ffffff33;
+      background-color: #2b7cdd;
+      color: white;
     }
   </style>
 </head>
 <body class="ibarra-font">
-
-  <!-- Top Header with Logo and Title -->
-  <div class="top-header">
-    <a href="https://www.rotary.org/en" target="_blank" rel="noopener noreferrer">
-      <img src="The_Rotary_Foundation.png" alt="Rotary Foundation Logo">
-    </a>
-    <h1>JFSS INTERACT</h1>
-  </div>
 
   <!-- Navigation Bar -->
   <header>
@@ -53,20 +91,13 @@
     </nav>
   </header>
 
+  <!-- JFSS INTERACT Text -->
+  <div class="jfss-text">JFSS INTERACT</div>
+
   <!-- Service Above Self Message -->
   <section id="home-tagline">
     <p>Service Above Self | Making a Difference One Step at a Time.</p>
   </section>
-
-  <main>
-    <!-- other main content -->
-  </main>
-
-  <div class="bottom-image-row">
-    <img src="snacksposter.png" alt="Snacks Poster">
-    <img src="stairs.png" alt="Stairs">
-    <img src="booth.png" alt="Booth">
-  </div>
 
   <footer>
     <p>&copy; 2025 JFSS Interact Club</p>
@@ -74,3 +105,4 @@
 
 </body>
 </html>
+
