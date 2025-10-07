@@ -142,11 +142,12 @@ nav ul li a:hover {
 #home-logo {
   display: block;
   margin: 40px auto 20px auto;
-  width: 35%;
-  max-width: 300px;
+  width: 60%;      /* bigger than 35% */
+  max-width: 500px; /* larger max size */
   height: auto;
   border-radius: 50%;
 }
+
 
 #home-tagline {
   text-align: center;
