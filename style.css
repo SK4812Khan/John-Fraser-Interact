@@ -26,25 +26,27 @@
 
 html, body {
   width: 100%;
-  height: 100%; /* ensure full height */
+  height: 100%;
   overflow-x: hidden;
   position: relative;
-  background-color: transparent; /* ensure no white overlay */
+  background-color: transparent; /* transparent so background shows */
 }
 
 body {
-  color: white; /* text color white */
+  color: white;
   font-family: 'Ibarra Real Nova', serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-size: 1.2em;
 
+  /* fade-in initial state */
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+/* fade-in when JS adds class */
 body.fade-in-visible {
   opacity: 1;
   transform: translateY(0);
@@ -59,11 +61,11 @@ body.fade-in-visible {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("bbl.png");
+  background-image: url("bbl.png"); /* make sure path is correct */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1; /* behind all content */
+  z-index: -1;
 }
 
 /* ==========================
@@ -81,7 +83,7 @@ img:hover {
    Top Header Above Navbar
 ========================== */
 .top-header {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8); /* slightly transparent so background shows */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,6 +91,7 @@ img:hover {
   width: 100vw;
   height: auto;
   padding: 0 20px;
+  z-index: 2;
 }
 
 .top-header img {
