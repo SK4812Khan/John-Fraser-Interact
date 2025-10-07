@@ -15,16 +15,16 @@
       display: flex;
       flex-direction: column;
       overflow-x: hidden;
-      color: white;
+      color: white; /* Default text color */
     }
 
     body {
-      background-image: url("bbl.png");
+      background-image: url("bbl.png"); /* Replace with your image */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       background-attachment: fixed;
-      flex: 1;
+      flex: 1; /* So footer sticks to bottom */
     }
 
     header {
@@ -37,6 +37,10 @@
 
     nav ul li a:hover {
       text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
     }
 
     footer {
@@ -64,14 +68,12 @@
     </nav>
   </header>
 
-  <!-- JFSS INTERACT Logo -->
-  <section id="home-logo">
-    <img src="circle.png" alt="JFSS Interact Logo">
-  </section>
+  <!-- Home Page Logo -->
+  <img id="home-logo" src="circle.png" alt="JFSS Interact Club Logo">
 
-  <!-- Tagline Section -->
+  <!-- Service Above Self Message -->
   <section id="home-tagline">
-    <p>JFSS INTERACT</p>
+    <p>Service Above Self | Making a Difference One Step at a Time</p>
   </section>
 
   <!-- Main Content -->
