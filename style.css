@@ -691,10 +691,17 @@ body::before {
 
 /* ── TEAM ── */
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
   margin-top: 60px;
+}
+
+.team-grid .team-card {
+  width: calc(25% - 18px);
+  min-width: 200px;
+  max-width: 260px;
 }
 
 .team-card {
@@ -1030,7 +1037,8 @@ footer {
   .events-photos .photo:nth-child(2),
   .events-photos .photo:nth-child(3) { display: none; }
 
-  .team-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .team-grid { gap: 12px; }
+  .team-grid .team-card { width: calc(50% - 6px); max-width: none; }
 
   .contact-grid { grid-template-columns: 1fr; gap: 48px; }
 
